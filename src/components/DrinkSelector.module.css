@@ -1,0 +1,231 @@
+/* src/components/DrinkSelector.module.css */
+
+.componentBox {
+  /* Assuming a shared basic box style, or define specific here */
+  border: 1px solid var(--color-border, #ccc);
+  border-radius: 5px;
+  padding: 15px;
+  background-color: var(--color-surface-alt, #f9f9f9);
+  display: flex;
+  flex-direction: column; /* Ensure flex direction for content */
+}
+
+.componentBox h2 {
+  margin-top: 0;
+  color: var(--color-secondary, #2b2a29);
+  border-bottom: 1px solid var(--color-border-light, #eee);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+/* Filters Section Styles */
+.filters {
+  display: flex;
+  flex-direction: column; /* Stack filters vertically on mobile */
+  gap: 12px; /* Increased gap slightly */
+  margin-bottom: 15px;
+  padding-bottom: 15px; /* Increased padding */
+  border-bottom: 1px solid var(--color-border-light, #eee);
+}
+
+.filterItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* Slightly increased gap */
+}
+
+.filterItem label {
+  font-size: 0.85em;
+  color: var(--color-text-muted, #555);
+  font-weight: bold;
+}
+
+/* Style for both select and text input */
+.filters select,
+.filters input[type="text"] {
+  padding: 10px 12px;
+  border: 1px solid var(--color-border, #ccc);
+  border-radius: 4px;
+  font-size: 1em;
+  background-color: var(--color-surface, #fff);
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filters select:focus,
+.filters input[type="text"]:focus {
+  outline: none;
+  border-color: var(--color-primary, #ef7f1a);
+  box-shadow: 0 0 0 2px rgba(239, 127, 26, 0.2); /* Subtle focus ring */
+}
+
+/* Style overrides for select dropdown */
+.filters select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23888888%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px auto;
+  padding-right: 30px;
+}
+
+/* Wrapper for search input and clear button */
+.searchInputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchInputWrapper input[type="text"] {
+  padding-right: 30px;
+  width: 100%;
+}
+
+/* Clear Search Button Styles */
+.clearSearchButton {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ccc;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.clearSearchButton:hover {
+  background-color: #aaa;
+}
+
+/* Drink List styles */
+.drinkList {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0; /* Add some top margin */
+  max-height: 300px; /* Adjust as needed */
+  overflow-y: auto;
+  border: 1px solid var(--color-border-light, #eee);
+  border-radius: 3px;
+  flex-grow: 1; /* Allow list to take remaining space in flex column */
+}
+
+.drinkItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--color-border-light, #eee);
+  transition: background-color 0.3s ease-out;
+}
+.drinkItem:last-child {
+  border-bottom: none;
+}
+
+.drinkInfo {
+  flex-grow: 1;
+  margin-right: 10px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.drinkName {
+  font-weight: bold;
+  color: var(--color-secondary, #2b2a29); /* Darker name */
+}
+.drinkSize {
+  font-style: italic;
+  color: var(--color-text-muted, #555);
+  font-size: 0.9em;
+  margin-left: 4px; /* Space after name */
+}
+.drinkPrice {
+  color: var(--color-success-dark, #367c39); /* Darker Green price */
+  font-weight: bold;
+  margin-left: 4px;
+}
+.drinkDetails {
+  color: #777;
+  font-size: 0.85em;
+  display: block; /* Keep details on new line */
+  margin-top: 2px;
+}
+
+/* Add Drink Button Styles */
+.addDrinkButton {
+  padding: 5px 10px;
+  background-color: var(--color-success, #4caf50);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  line-height: 1;
+  font-weight: bold;
+  min-width: 30px;
+  text-align: center;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  flex-shrink: 0;
+}
+.addDrinkButton:hover {
+  background-color: var(--color-success-dark, #367c39);
+  transform: scale(1.05);
+}
+.addDrinkButton:disabled {
+  background-color: #a5d6a7; /* Lighter green when disabled/added */
+  cursor: default;
+  transform: none;
+  font-size: 1.1em; /* Adjust checkmark size */
+}
+
+/* Feedback Styles */
+@keyframes fadeBackground {
+  from {
+    background-color: #c8e6c9;
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+.addedFeedback {
+  /* Renamed class for feedback */
+  animation: fadeBackground 1s ease-out;
+}
+
+/* --- Desktop Adjustments --- */
+@media (min-width: 768px) {
+  .filters {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .filterItem {
+    flex-grow: 1;
+  }
+
+  .filterItem.searchFilter {
+    /* Give search more space potentially */
+    flex-grow: 2;
+  }
+
+  .filters select,
+  .filters input[type="text"] {
+    width: auto; /* Allow inputs to size naturally */
+  }
+
+  .drinkList {
+    max-height: 450px; /* Restore taller list */
+  }
+}

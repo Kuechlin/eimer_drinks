@@ -1,0 +1,60 @@
+/* src/index.css */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.5; /* Add baseline line-height */
+}
+
+/* Define CSS Variables for colors (optional but recommended) */
+:root {
+  --color-primary: #ef7f1a; /* Eimer Orange */
+  --color-primary-dark: #e06a00;
+  --color-secondary: #2b2a29; /* Eimer Dark */
+  --color-background: #f4f4f4;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f9f9f9;
+  --color-text: #333333;
+  --color-text-muted: #555555;
+  --color-border: #cccccc;
+  --color-border-light: #eeeeee;
+  --color-success: #4caf50;
+  --color-success-dark: #367c39;
+  --color-danger: #f44336;
+  --color-danger-dark: #d32f2f;
+}
+
+/* Apply variables (example) */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+button {
+  /* Basic button reset */
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input,
+select,
+button {
+  font-size: 1em; /* Consistent base font size */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.5em 0; /* Basic heading margin */
+  line-height: 1.3;
+}

@@ -1,0 +1,154 @@
+/* src/App.module.css */
+
+.appContainer {
+  margin: 0 auto;
+  background-color: var(--color-surface, #fff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  border-bottom: 2px solid var(--color-primary, #ef7f1a);
+  padding: 10px 15px;
+  margin-bottom: 0;
+  background-color: var(--color-secondary, #2b2a29);
+  color: #fff;
+  position: relative; /* For reset button positioning */
+}
+
+.title {
+  /* Replaces header h1 */
+  color: var(--color-primary, #ef7f1a);
+  margin: 0 0 5px 0;
+  font-size: 1.5em;
+}
+
+.subtitle {
+  /* Replaces header p */
+  display: none; /* Hidden on mobile by default */
+  color: #ccc;
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+.headerLink {
+  /* Replaces header a */
+  color: var(--color-primary, #ef7f1a);
+  text-decoration: none;
+}
+.headerLink:hover {
+  text-decoration: underline;
+}
+
+.resetButton {
+  /* Replaces header .reset-button */
+  background-color: var(--color-danger, #f44336);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8em;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.resetButton:hover {
+  background-color: var(--color-danger-dark, #d32f2f);
+}
+
+/* Tab Navigation */
+.tabNav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #eee;
+  border-bottom: 1px solid var(--color-border, #ccc);
+  flex-shrink: 0; /* Prevent nav from shrinking */
+}
+
+.tabButton {
+  /* Replaces .tab-nav button */
+  flex-grow: 1;
+  padding: 12px 5px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 0.95em;
+  color: var(--color-text-muted, #555);
+  border-bottom: 3px solid transparent;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease;
+  text-align: center;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.tabButton:hover {
+  background-color: #ddd;
+}
+
+.tabButton.active {
+  /* Combined with .active class */
+  color: var(--color-primary, #ef7f1a);
+  font-weight: bold;
+  border-bottom-color: var(--color-primary, #ef7f1a);
+}
+
+/* Tab Content Area */
+.tabContent {
+  padding: 15px;
+  flex-grow: 1; /* Allow content to fill remaining space */
+  background-color: var(--color-surface, #fff);
+  overflow-y: auto; /* Allow content itself to scroll if needed */
+  /* We need this for flex children */
+  display: flex;
+  flex-direction: column;
+}
+
+.tabPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex-grow: 1; /* Allow panel to grow */
+}
+
+/* --- Desktop Styles --- */
+@media (min-width: 768px) {
+  /* .appContainer styles are mostly global in index.css now */
+
+  .header {
+    padding: 15px;
+  }
+  .title {
+    font-size: 2em;
+  }
+  .subtitle {
+    display: block; /* Show subtitle */
+  }
+  .resetButton {
+    padding: 8px 12px;
+    font-size: 0.9em;
+  }
+
+  .tabContent {
+    padding: 20px;
+  }
+
+  /* Desktop layout for Add tab */
+  .tabPanel.addPanel {
+    /* Target specific panel class */
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .tabPanel.addPanel > div:first-child {
+    /* PersonManager */
+    flex: 1 1 300px; /* Flex: grow shrink basis */
+    max-width: 350px; /* Max width for person list */
+    flex-shrink: 0; /* Don't shrink person list */
+  }
+  .tabPanel.addPanel > div:last-child {
+    /* DrinkSelector or messages */
+    flex: 2 1 400px; /* Allow drink list to grow more */
+  }
+}

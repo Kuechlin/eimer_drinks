@@ -1,0 +1,96 @@
+/* src/components/OrderLog.module.css */
+
+.componentBox {
+  /* Or use a shared box style if defined globally */
+  border: 1px solid var(--color-border, #ccc);
+  border-radius: 5px;
+  padding: 15px;
+  background-color: var(--color-surface-alt, #f9f9f9);
+  display: flex; /* Allow list to grow */
+  flex-direction: column;
+}
+
+.componentBox h2 {
+  margin-top: 0;
+  color: var(--color-secondary, #2b2a29);
+  border-bottom: 1px solid var(--color-border-light, #eee);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.orderList {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  max-height: 300px; /* Adjust as needed */
+  overflow-y: auto;
+  border: 1px solid var(--color-border-light, #eee);
+  border-radius: 3px;
+  background-color: var(--color-surface, #fff);
+  flex-grow: 1; /* Allow list to take available vertical space */
+}
+
+.orderItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--color-border-light, #f0f0f0);
+  font-size: 0.95em;
+  transition: background-color 0.2s ease;
+  overflow-wrap: break-word; /* Prevent long names overflowing */
+  word-break: break-word;
+}
+.orderItem:last-child {
+  border-bottom: none;
+}
+.orderItem:hover {
+  background-color: #f9f9f9;
+}
+
+/* Style the text part of the order item */
+.orderItem > span {
+  flex-grow: 1;
+  margin-right: 10px;
+  line-height: 1.4;
+  color: var(--color-text, #333);
+}
+
+.removeButton {
+  /* Renamed from .order-item .remove-button */
+  background-color: var(--color-primary, #ef7f1a); /* Eimer Orange */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: bold;
+  line-height: 1;
+  padding: 3px 7px;
+  margin-left: 10px;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease;
+}
+.removeButton:hover {
+  background-color: var(--color-primary-dark, #d36000); /* Darker orange */
+}
+
+/* Style the empty log message */
+.emptyMessage {
+  /* Specific class for the empty message paragraph */
+  font-style: italic;
+  color: var(--color-text-muted, #888);
+  text-align: center;
+  padding: 20px;
+  background-color: var(--color-surface-alt, #f9f9f9);
+  border-radius: 3px;
+  margin-top: 10px; /* Add margin if list is empty */
+}
+
+/* Adjust list height on desktop if needed */
+@media (min-width: 768px) {
+  .orderList {
+    max-height: 450px;
+  }
+}

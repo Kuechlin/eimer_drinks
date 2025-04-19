@@ -1,0 +1,91 @@
+/* src/components/PersonManager.module.css */
+
+/* Styles specific to PersonManager */
+.componentBox {
+  /* Renamed from .component-box if that was generic */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.componentBox h2 {
+  margin-top: 0;
+  color: #2b2a29;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.addPersonForm {
+  display: flex;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+
+.addPersonForm input {
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 50px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px 0 0 3px;
+  font-size: 1em;
+}
+
+.addPersonForm button {
+  padding: 8px 12px;
+  background-color: #ef7f1a;
+  color: white;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  font-size: 1em;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.addPersonForm button:hover {
+  background-color: #e06a00;
+}
+
+.personList {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  max-height: 150px; /* Adjust height as needed, maybe make responsive */
+  overflow-y: auto;
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
+.personListItem {
+  /* Renamed from just li */
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.personListItem:last-child {
+  border-bottom: none;
+}
+.personListItem:hover {
+  background-color: #f0f0f0;
+}
+
+.selected {
+  /* Class for the selected item */
+  background-color: #ef7f1a;
+  color: white;
+  font-weight: bold;
+}
+
+/* Example Media Query within Module (if needed) */
+@media (min-width: 768px) {
+  .personList {
+    max-height: 450px; /* Taller list on desktop */
+  }
+  .addPersonForm button {
+    padding: 8px 15px;
+  }
+}

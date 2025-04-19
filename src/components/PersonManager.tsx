@@ -1,6 +1,7 @@
 // src/components/PersonManager.tsx
 import React, { useState } from "react";
 import { Person } from "../types";
+import styles from "./PersonManager.module.css"; // Import the CSS Module
 
 interface PersonManagerProps {
   people: Person[];
@@ -20,13 +21,14 @@ const PersonManager: React.FC<PersonManagerProps> = ({
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     onAddPerson(newName);
-    setNewName(""); // Clear input after adding
+    setNewName("");
   };
 
   return (
-    <div className="component-box">
+    // Use styles object for class names
+    <div className={styles.componentBox}>
       <h2>Friends List</h2>
-      <form onSubmit={handleSubmit} className="add-person-form">
+      <form onSubmit={handleSubmit} className={styles.addPersonForm}>
         <input
           type="text"
           value={newName}
@@ -36,12 +38,17 @@ const PersonManager: React.FC<PersonManagerProps> = ({
         />
         <button type="submit">Add</button>
       </form>
-      <ul className="person-list">
-        {people.length === 0 && <li>No friends added yet.</li>}
+      <ul className={styles.personList}>
+        {people.length === 0 && (
+          <li className={styles.personListItem}>No friends added yet.</li>
+        )}
         {people.map((person) => (
           <li
             key={person.id}
-            className={person.id === selectedPersonId ? "selected" : ""}
+            // Combine classes conditionally
+            className={`${styles.personListItem} ${
+              person.id === selectedPersonId ? styles.selected : ""
+            }`}
             onClick={() => onSelectPerson(person.id)}
           >
             {person.name}

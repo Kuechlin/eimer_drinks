@@ -6,19 +6,18 @@ import PersonManager from "./components/PersonManager";
 import DrinkSelector from "./components/DrinkSelector";
 import OrderLog from "./components/OrderLog";
 import Summary from "./components/Summary";
-import "./App.css";
+import styles from "./App.module.css"; // Import the App CSS Module
+// Keep global styles import in main.tsx
 
 // LocalStorage keys remain the same
 const PEOPLE_STORAGE_KEY = "eimerTracker_people";
 const ORDERS_STORAGE_KEY = "eimerTracker_orders";
 const SELECTED_PERSON_STORAGE_KEY = "eimerTracker_selectedPersonId";
 
-// Define possible tabs
 type Tab = "add" | "log" | "summary";
 
 function App() {
-  // --- State Initialization with localStorage ---
-  // (Keep the useState initializers for people, orders, selectedPersonId as before)
+  // --- State Initializers (remain the same) ---
   const [people, setPeople] = useState<Person[]>(() => {
     const savedPeople = localStorage.getItem(PEOPLE_STORAGE_KEY);
     try {
@@ -28,7 +27,6 @@ function App() {
       return [];
     }
   });
-
   const [orders, setOrders] = useState<Order[]>(() => {
     const savedOrders = localStorage.getItem(ORDERS_STORAGE_KEY);
     try {
@@ -38,58 +36,47 @@ function App() {
       return [];
     }
   });
-
   const [selectedPersonId, setSelectedPersonId] = useState<string | null>(
     () => {
       const savedSelectedId = localStorage.getItem(SELECTED_PERSON_STORAGE_KEY);
       const peopleList = localStorage.getItem(PEOPLE_STORAGE_KEY);
-      // Use try-catch for parsing peopleList just in case
       try {
         const currentPeople = peopleList ? JSON.parse(peopleList) : [];
         if (
           savedSelectedId &&
           currentPeople.some((p: Person) => p.id === savedSelectedId)
-        ) {
+        )
           return savedSelectedId;
-        }
       } catch (error) {
         console.error(
           "Failed to parse people list while checking selected ID",
           error
         );
       }
-      localStorage.removeItem(SELECTED_PERSON_STORAGE_KEY); // Clear invalid selection
+      localStorage.removeItem(SELECTED_PERSON_STORAGE_KEY);
       return null;
     }
   );
+  const [activeTab, setActiveTab] = useState<Tab>("add");
 
-  // --- New Tab State ---
-  const [activeTab, setActiveTab] = useState<Tab>("add"); // Default to 'add' tab
-
-  // --- useEffects for Saving State to localStorage ---
-  // (Keep the useEffect hooks for people, orders, selectedPersonId as before)
+  // --- useEffects for Saving State (remain the same) ---
   useEffect(() => {
     localStorage.setItem(PEOPLE_STORAGE_KEY, JSON.stringify(people));
-    if (selectedPersonId && !people.some((p) => p.id === selectedPersonId)) {
+    if (selectedPersonId && !people.some((p) => p.id === selectedPersonId))
       setSelectedPersonId(null);
-    }
   }, [people, selectedPersonId]);
-
   useEffect(() => {
     localStorage.setItem(ORDERS_STORAGE_KEY, JSON.stringify(orders));
   }, [orders]);
-
   useEffect(() => {
-    if (selectedPersonId) {
+    if (selectedPersonId)
       localStorage.setItem(SELECTED_PERSON_STORAGE_KEY, selectedPersonId);
-    } else {
-      localStorage.removeItem(SELECTED_PERSON_STORAGE_KEY);
-    }
+    else localStorage.removeItem(SELECTED_PERSON_STORAGE_KEY);
   }, [selectedPersonId]);
 
-  // --- Management Functions ---
-  // (Keep addPerson, selectPerson, addOrder, removeOrder, handleResetData as before)
+  // --- Management Functions (remain the same) ---
   const addPerson = (name: string) => {
+    /* ... */
     if (name.trim() === "") return;
     if (
       people.some((p) => p.name.toLowerCase() === name.trim().toLowerCase())
@@ -97,22 +84,14 @@ function App() {
       alert(`${name} is already on the list!`);
       return;
     }
-    const newPerson: Person = {
-      id: crypto.randomUUID(),
-      name: name.trim(),
-    };
+    const newPerson: Person = { id: crypto.randomUUID(), name: name.trim() };
     const updatedPeople = [...people, newPerson];
     setPeople(updatedPeople);
-    if (!selectedPersonId) {
-      setSelectedPersonId(newPerson.id);
-    }
+    if (!selectedPersonId) setSelectedPersonId(newPerson.id);
   };
-
-  const selectPerson = (id: string) => {
-    setSelectedPersonId(id);
-  };
-
+  const selectPerson = (id: string) => setSelectedPersonId(id);
   const addOrder = (drink: Drink) => {
+    /* ... */
     if (!selectedPersonId) {
       alert("Please select a person first!");
       return;
@@ -127,14 +106,12 @@ function App() {
     };
     setOrders((prevOrders) => [...prevOrders, newOrder]);
   };
-
-  const removeOrder = (orderId: string) => {
+  const removeOrder = (orderId: string) =>
     setOrders((prevOrders) =>
       prevOrders.filter((order) => order.id !== orderId)
     );
-  };
-
   const handleResetData = () => {
+    /* ... */
     if (
       window.confirm(
         "Are you sure you want to clear all friends and orders? This cannot be undone."
@@ -146,51 +123,67 @@ function App() {
       localStorage.removeItem(PEOPLE_STORAGE_KEY);
       localStorage.removeItem(ORDERS_STORAGE_KEY);
       localStorage.removeItem(SELECTED_PERSON_STORAGE_KEY);
-      setActiveTab("add"); // Reset to add tab
+      setActiveTab("add");
     }
   };
 
   const selectedPerson = people.find((p) => p.id === selectedPersonId) || null;
 
   return (
-    <div className="app-container">
-      <header>
-        <h1>🍻 Eimer Drink Tracker 🍻</h1>
-        {/* Reset button can stay here or move */}
-        <button onClick={handleResetData} className="reset-button">
+    // Apply styles from App.module.css
+    <div className={styles.appContainer}>
+      <header className={styles.header}>
+        <h1 className={styles.title}>🍻 Eimer Drink Tracker 🍻</h1>
+        {/* Link to actual pub site */}
+        <p className={styles.subtitle}>
+          Your friendly pub tab tracker for{" "}
+          <a
+            href="https://eimer-freiburg.de/drinks/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.headerLink}
+          >
+            Eimer Freiburg
+          </a>
+          !
+        </p>
+        <button onClick={handleResetData} className={styles.resetButton}>
           Reset All Data
         </button>
       </header>
 
-      {/* --- Tab Navigation --- */}
-      <nav className="tab-nav">
+      <nav className={styles.tabNav}>
         <button
           onClick={() => setActiveTab("add")}
-          className={activeTab === "add" ? "active" : ""}
+          // Combine base button class with active class conditionally
+          className={`${styles.tabButton} ${
+            activeTab === "add" ? styles.active : ""
+          }`}
         >
           Add Drinks
         </button>
         <button
           onClick={() => setActiveTab("log")}
-          className={activeTab === "log" ? "active" : ""}
+          className={`${styles.tabButton} ${
+            activeTab === "log" ? styles.active : ""
+          }`}
         >
-          Order Log ({orders.length}) {/* Show order count */}
+          Order Log ({orders.length})
         </button>
         <button
           onClick={() => setActiveTab("summary")}
-          className={activeTab === "summary" ? "active" : ""}
+          className={`${styles.tabButton} ${
+            activeTab === "summary" ? styles.active : ""
+          }`}
         >
           Summary
         </button>
       </nav>
 
-      {/* --- Tab Content --- */}
-      <main className="tab-content">
-        {/* --- ADD Tab --- */}
+      <main className={styles.tabContent}>
         {activeTab === "add" && (
-          <div className="tab-panel add-panel">
-            {" "}
-            {/* Use specific class */}
+          // Added specific panel class from module for desktop layout targeting
+          <div className={`${styles.tabPanel} ${styles.addPanel}`}>
             <PersonManager
               people={people}
               selectedPersonId={selectedPersonId}
@@ -213,11 +206,10 @@ function App() {
           </div>
         )}
 
-        {/* --- LOG Tab --- */}
         {activeTab === "log" && (
-          <div className="tab-panel log-panel">
+          <div className={styles.tabPanel}>
             {" "}
-            {/* Use specific class */}
+            {/* Basic panel class */}
             <OrderLog
               orders={orders}
               people={people}
@@ -226,11 +218,10 @@ function App() {
           </div>
         )}
 
-        {/* --- SUMMARY Tab --- */}
         {activeTab === "summary" && (
-          <div className="tab-panel summary-panel">
+          <div className={styles.tabPanel}>
             {" "}
-            {/* Use specific class */}
+            {/* Basic panel class */}
             <Summary orders={orders} people={people} />
           </div>
         )}
