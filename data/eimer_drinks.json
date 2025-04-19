@@ -1,0 +1,1026 @@
+[
+    {
+        "id": "af13ab46-86b1-4299-9b82-b2d68357c928",
+        "category": "Bier vom Fass",
+        "name": "Fürstenberg Pils",
+        "price": 4.2,
+        "size": "0,5l"
+    },
+    {
+        "id": "416af0b6-d5a5-4e39-8ab2-36dca5573003",
+        "category": "Bier vom Fass",
+        "name": "Fürstenberg Pils",
+        "price": 3.0,
+        "size": "0,3l"
+    },
+    {
+        "id": "f54ec23f-f407-4093-b89a-08a1201a7955",
+        "category": "Bier vom Fass",
+        "name": "Hefeweizen Fürstenberg",
+        "price": 4.4,
+        "size": "0,5l"
+    },
+    {
+        "id": "e5b172bb-055d-4000-bd04-e19789d94388",
+        "category": "Bier vom Fass",
+        "name": "Hefeweizen Fürstenberg",
+        "price": 3.2,
+        "size": "0,3l"
+    },
+    {
+        "id": "3c915d03-1de8-4699-83ec-c15391ed817a",
+        "category": "Bier vom Fass",
+        "name": "Riegeler Landbier",
+        "price": 4.2,
+        "size": "0,5l"
+    },
+    {
+        "id": "0f877ba7-22e7-4095-b984-db45a123f3e8",
+        "category": "Bier vom Fass",
+        "name": "Riegeler Landbier",
+        "price": 3.0,
+        "size": "0,3l"
+    },
+    {
+        "id": "d8e39209-e450-4907-ac79-2801fc15b420",
+        "category": "Bier vom Fass",
+        "name": "Hacker-Pschorr naturtrüb",
+        "price": 4.4,
+        "size": "0,5l"
+    },
+    {
+        "id": "487e4940-923f-44c5-b874-4a51a34b59e0",
+        "category": "Bier vom Fass",
+        "name": "Guinness Irish Draught",
+        "price": 4.8,
+        "size": "0,4l"
+    },
+    {
+        "id": "7e7bc5b7-9c35-417f-8a92-fc57297f49f4",
+        "category": "Bier vom Fass",
+        "name": "Irish Radler (Guinness mit Ingwerlimo)",
+        "price": 5.8,
+        "size": "0,4l"
+    },
+    {
+        "id": "4c65ce63-7d08-4471-889a-0b3483eb660f",
+        "category": "Bier vom Fass",
+        "name": "Radler",
+        "price": 3.8,
+        "details": "2",
+        "size": "0,5l"
+    },
+    {
+        "id": "4259b8e3-5405-40ee-a6eb-b765ab65f322",
+        "category": "Bier vom Fass",
+        "name": "Cola-Bier",
+        "price": 3.8,
+        "details": "1, 5",
+        "size": "0,5l"
+    },
+    {
+        "id": "eb85624c-c094-457f-a2c0-4308d11267d5",
+        "category": "Bier vom Fass",
+        "name": "Weizen-Radler",
+        "price": 4.2,
+        "details": "2",
+        "size": "0,5l"
+    },
+    {
+        "id": "bf08f337-6118-4e3a-bee6-a3d7ef47acf3",
+        "category": "Bier vom Fass",
+        "name": "Cola-Weizen",
+        "price": 4.2,
+        "details": "1, 5",
+        "size": "0,5l"
+    },
+    {
+        "id": "b7c34ec5-5369-4a48-b545-75cf780e0535",
+        "category": "Bier vom Fass",
+        "name": "Apfel-Radler (Radler sauer + Apfel)",
+        "price": 3.8,
+        "size": "0,5l"
+    },
+    {
+        "id": "bf031dda-0096-443d-ab73-9e9954428169",
+        "category": "Flaschenbier",
+        "name": "Heineken",
+        "price": 3.6,
+        "size": "0,33l"
+    },
+    {
+        "id": "eb0ff765-066f-44cf-a791-5a2030b204fa",
+        "category": "Flaschenbier",
+        "name": "Riegeler Landbier",
+        "price": 3.8,
+        "size": "0,5l"
+    },
+    {
+        "id": "124cecc4-f05d-407c-af35-a5d550228630",
+        "category": "Flaschenbier",
+        "name": "Bilger „STÜMPLE“",
+        "price": 2.9,
+        "size": "0,33l"
+    },
+    {
+        "id": "408d2795-8133-4868-b4b7-80070c3a61b3",
+        "category": "Flaschenbier",
+        "name": "Diebels Alt",
+        "price": 2.9,
+        "size": "0,33l"
+    },
+    {
+        "id": "011400d1-362a-421b-8f2c-31de562e5d01",
+        "category": "Flaschenbier",
+        "name": "Krefelder (Alt + Cola)",
+        "price": 3.8,
+        "details": "1,5",
+        "size": "0,5l"
+    },
+    {
+        "id": "1ab825bf-f7bd-425f-993b-3ab321c4f253",
+        "category": "Flaschenbier",
+        "name": "Kristallweizen Fürstenberg",
+        "price": 4.0,
+        "size": "0,5l"
+    },
+    {
+        "id": "f1d22307-d288-496e-9c22-fb48e1f50d7b",
+        "category": "Flaschenbier",
+        "name": "Hefeweizen dunkel Fürstenberg",
+        "price": 4.0,
+        "size": "0,5l"
+    },
+    {
+        "id": "d17a804d-9f37-4ce3-b837-a7ca149815eb",
+        "category": "Flaschenbier",
+        "name": "Andechs Doppelbock (7,1%vol.)",
+        "price": 4.6,
+        "size": "0,5l"
+    },
+    {
+        "id": "f570d1c5-0a08-467d-9679-c4b52d540352",
+        "category": "Flaschenbier",
+        "name": "Paulaner Hefeweizen alkoholfrei",
+        "price": 4.0,
+        "size": "0,5l"
+    },
+    {
+        "id": "4cd0fd8a-5265-4940-98a2-301b6a471532",
+        "category": "Flaschenbier",
+        "name": "Hacker-Pschorr naturtrüb alkoholfrei",
+        "price": 4.0,
+        "size": "0,5l"
+    },
+    {
+        "id": "1ccce0a8-7f76-4810-8acd-eb21f6b358ad",
+        "category": "Flaschenbier",
+        "name": "Fürstenberg alkoholfrei",
+        "price": 2.8,
+        "size": "0,33l"
+    },
+    {
+        "id": "a7fb0cad-18f1-498a-b6a7-afd5c8d4d6be",
+        "category": "Alkoholfreie Getränke",
+        "name": "Tafelwasser klein",
+        "price": 1.5,
+        "details": "1,5",
+        "size": "0,3l"
+    },
+    {
+        "id": "a0424fef-bc36-4586-a2e1-29182c7231df",
+        "category": "Alkoholfreie Getränke",
+        "name": "Tafelwasser groß",
+        "price": 1.9,
+        "details": "1,5",
+        "size": "0,4l"
+    },
+    {
+        "id": "cdcaaee3-24a1-43c4-ae52-a7baabb39cbe",
+        "category": "Alkoholfreie Getränke",
+        "name": "Coca Cola",
+        "price": 2.6,
+        "details": "1,5",
+        "size": "0,3l"
+    },
+    {
+        "id": "764fbca7-e219-4ee8-8972-16dda2115d57",
+        "category": "Alkoholfreie Getränke",
+        "name": "Orangenlimonade (regional)",
+        "price": 2.6,
+        "details": "4",
+        "size": "0,3l"
+    },
+    {
+        "id": "d12afdc1-93d0-4771-b1bb-f93b3bf6e68d",
+        "category": "Alkoholfreie Getränke",
+        "name": "Spezi",
+        "price": 2.6,
+        "details": "1,4,5",
+        "size": "0,3l"
+    },
+    {
+        "id": "e84a4715-63b4-41e4-9533-c60c1de54a1c",
+        "category": "Alkoholfreie Getränke",
+        "name": "Coca Cola ZERO",
+        "price": 2.6,
+        "details": "1,3,5",
+        "size": "0,2l"
+    },
+    {
+        "id": "fcdec8a3-0558-4fb9-b29c-767c6dcea368",
+        "category": "Alkoholfreie Getränke",
+        "name": "Zitronenlimonade (regional)",
+        "price": 2.6,
+        "size": "0,3"
+    },
+    {
+        "id": "4e248a24-905c-4f4d-a513-0ddc2f537348",
+        "category": "Alkoholfreie Getränke",
+        "name": "Orangina rouge",
+        "price": 2.6,
+        "details": "1,3",
+        "size": "0,25l"
+    },
+    {
+        "id": "21caa314-e347-4cde-b643-85156a6f3be0",
+        "category": "Alkoholfreie Getränke",
+        "name": "Karamalz",
+        "price": 2.7,
+        "details": "1,3",
+        "size": "0,33l"
+    },
+    {
+        "id": "ef3da458-5539-4966-9fd6-b119653c340a",
+        "category": "Alkoholfreie Getränke",
+        "name": "Saft- / Nektar-Schorle klein",
+        "price": 2.6,
+        "size": "0,3l"
+    },
+    {
+        "id": "d26fc037-2638-467b-aaab-7426b3bcd670",
+        "category": "Alkoholfreie Getränke",
+        "name": "Wostok Kräuterlimonade",
+        "price": 3.0,
+        "details": "5",
+        "size": "0,33l"
+    },
+    {
+        "id": "b7a48704-6ab7-4801-aa2c-f873805900b3",
+        "category": "Alkoholfreie Getränke",
+        "name": "Cola, Orangenlimo, Zitronenlimo, Spezi",
+        "price": 3.0,
+        "details": "1,4,5",
+        "size": "0,4l"
+    },
+    {
+        "id": "e338600f-6c80-4fde-9db4-50d25fe68ed5",
+        "category": "Alkoholfreie Getränke",
+        "name": "Saft- / Nektar-Schorle groß",
+        "price": 3.4,
+        "size": "0,4l"
+    },
+    {
+        "id": "5839e00d-9f44-4109-abb6-fea00e322c42",
+        "category": "Alkoholfreie Getränke",
+        "name": "Saft / Nektar (s.o.) groß",
+        "price": 360.0,
+        "size": "0,4l"
+    },
+    {
+        "id": "8ec95c32-6670-414d-be6a-06f236d295cb",
+        "category": "Alkoholfreie Getränke",
+        "name": "Apfelsaft natutrüb",
+        "price": 2.2,
+        "details": "4",
+        "size": "0,2l"
+    },
+    {
+        "id": "f90e483a-f7cd-409f-9f4a-95dfaa220146",
+        "category": "Alkoholfreie Getränke",
+        "name": "Orangensaft",
+        "price": 2.2,
+        "details": "4",
+        "size": "0,2l"
+    },
+    {
+        "id": "ff867d3a-b9d2-4730-97e0-2774210afc24",
+        "category": "Alkoholfreie Getränke",
+        "name": "Kirschsaft",
+        "price": 2.2,
+        "details": "4",
+        "size": "0,2l"
+    },
+    {
+        "id": "14e446b4-fac7-4948-a0a0-294fe719137e",
+        "category": "Alkoholfreie Getränke",
+        "name": "Johannisbeersaft",
+        "price": 2.2,
+        "size": "0,2l"
+    },
+    {
+        "id": "baa6de41-d1b9-4910-8824-774461e1774c",
+        "category": "Alkoholfreie Getränke",
+        "name": "Maracuja-Nektar",
+        "price": 2.2,
+        "details": "4",
+        "size": "0,2l"
+    },
+    {
+        "id": "d503ed98-7408-45f2-9ef6-f97414e9fe8f",
+        "category": "Alkoholfreie Getränke",
+        "name": "Bananen-Nektar o. Mango-Nektar",
+        "price": 2.2,
+        "details": "4",
+        "size": "0,2l"
+    },
+    {
+        "id": "1a64eb6b-a5e0-464d-993d-f73c821f3868",
+        "category": "Alkoholfreie Getränke",
+        "name": "Bitter Lemon",
+        "price": 2.4,
+        "details": "1,2,6",
+        "size": "0,2l"
+    },
+    {
+        "id": "7b5ed43b-7bc5-4928-ad3b-7015de0c86cf",
+        "category": "Alkoholfreie Getränke",
+        "name": "Tonic Water o. Ginger Ale",
+        "price": 2.4,
+        "details": "1,2,6",
+        "size": "0,2l"
+    },
+    {
+        "id": "817f802c-b2ff-4c00-a9da-089f234c0692",
+        "category": "Alkoholfreie Getränke",
+        "name": "Proviant Limo Rhabarber o. Zitrone-Ingwer (vegan)",
+        "price": 3.0,
+        "size": "0,33l"
+    },
+    {
+        "id": "46fdda78-68f3-4d58-939f-1cf3c982dc04",
+        "category": "Alkoholfreie Getränke",
+        "name": "Flora-Power Mate (Eistee)",
+        "price": 3.0,
+        "details": "1,5",
+        "size": "0,33l"
+    },
+    {
+        "id": "cd0d05b8-b505-45ff-a3ee-3ad78ccec6b9",
+        "category": "Alkoholfreie Getränke",
+        "name": "effect Energy® auf Eis",
+        "price": 3.6,
+        "details": "1,5",
+        "size": "0,25l"
+    },
+    {
+        "id": "73fc0199-e2ee-47e6-b5ea-d7e87cded6c1",
+        "category": "Heiße Getränke",
+        "name": "Kaffee Fairtrade (oder koffeinfrei)",
+        "price": 2.2
+    },
+    {
+        "id": "3ef53665-eeaf-47a2-b575-92e8e6eb55a6",
+        "category": "Heiße Getränke",
+        "name": "Espresso Fairtrade",
+        "price": 2.0
+    },
+    {
+        "id": "2ed46d97-9ada-4aa3-9429-d3793474a5ba",
+        "category": "Heiße Getränke",
+        "name": "Milchkaffee",
+        "price": 2.9
+    },
+    {
+        "id": "9f89fef1-564a-4bf6-a368-6269fc65378b",
+        "category": "Heiße Getränke",
+        "name": "Großer Milchkaffee (Schale)",
+        "price": 3.4
+    },
+    {
+        "id": "d1ca9a01-8ba6-4efb-b0ee-d6546985d2d0",
+        "category": "Heiße Getränke",
+        "name": "Latte macchiato",
+        "price": 3.9
+    },
+    {
+        "id": "d6244a20-403b-4bb7-922e-b0b43d4d22af",
+        "category": "Heiße Getränke",
+        "name": "Heiße Schokolade + Sahne",
+        "price": 3.2
+    },
+    {
+        "id": "3490edc2-5756-45ed-ab3e-58345baa0915",
+        "category": "Heiße Getränke",
+        "name": "Ovomaltine",
+        "price": 3.2
+    },
+    {
+        "id": "df894a01-e7f5-4618-9ff9-15336d1e64d4",
+        "category": "Heiße Getränke",
+        "name": "Heiße Milch mit Honig",
+        "price": 3.2
+    },
+    {
+        "id": "81ca4791-8abb-4a8e-b9d7-d3cd65ee3708",
+        "category": "Heiße Getränke",
+        "name": "Tee: Schwarz, Kamille, Minze, Kräuter, Fenchel, Früchte, ...",
+        "price": 1.9
+    },
+    {
+        "id": "1cf3da05-4e55-43e8-a1e7-8bfc75796274",
+        "category": "Heißgetränke mit Spirit",
+        "name": "Carahillo",
+        "price": 2.8
+    },
+    {
+        "id": "b749e013-66dd-4063-b25a-928b359b3beb",
+        "category": "Heißgetränke mit Spirit",
+        "name": "Lumumba",
+        "price": 3.6
+    },
+    {
+        "id": "3eeecd39-8efb-4706-aa2f-563211ed5b07",
+        "category": "Heißgetränke mit Spirit",
+        "name": "Kaffee Bailey's o. Amaretto",
+        "price": 3.6
+    },
+    {
+        "id": "5b296f1d-c734-4f93-85c2-11279b567b0c",
+        "category": "Heißgetränke mit Spirit",
+        "name": "Irish Coffee",
+        "price": 4.2
+    },
+    {
+        "id": "a2bd2810-feae-448d-aa93-f30718457ac2",
+        "category": "Heißgetränke mit Spirit",
+        "name": "Gaelic Tea",
+        "price": 4.2
+    },
+    {
+        "id": "28254834-52b0-4a62-9893-534a54db9fb7",
+        "category": "Heißgetränke mit Spirit",
+        "name": "Espresso Punch",
+        "price": 2.6
+    },
+    {
+        "id": "55b2f22e-4a05-4024-a510-835645ff799a",
+        "category": "Heißgetränke mit Spirit",
+        "name": "Espresso Mexicano",
+        "price": 2.8
+    },
+    {
+        "id": "66165dd2-eff3-4687-bfa0-84d6be0fb687",
+        "category": "Heißgetränke mit Spirit",
+        "name": "Espresso Badisch",
+        "price": 3.0
+    },
+    {
+        "id": "59a27e81-1496-472c-bf72-e4373dc2af53",
+        "category": "Heißgetränke mit Spirit",
+        "name": "Hot Mall Santa",
+        "price": 2.4
+    },
+    {
+        "id": "89e2885e-8c2a-43c7-870d-695a671b406b",
+        "category": "Heißgetränke mit Spirit",
+        "name": "Grog",
+        "price": 3.2
+    },
+    {
+        "id": "7b562bc5-4456-4142-8bc6-478b31d2b2d8",
+        "category": "Heißgetränke mit Spirit",
+        "name": "Grog80",
+        "price": 3.8
+    },
+    {
+        "id": "dbeca41d-bc2e-4cc9-ac4a-cba0f9ad0a26",
+        "category": "Wein / Sekt",
+        "name": "Müller-Thurgau – trocken",
+        "price": 3.4,
+        "details": "(Q.b.a./Baden)",
+        "size": "0,2l"
+    },
+    {
+        "id": "da4c3f20-4ec3-4d2a-af7a-274e86bb3337",
+        "category": "Wein / Sekt",
+        "name": "Gutedel – trocken",
+        "price": 3.6,
+        "details": "(Q.b.a./Baden)",
+        "size": "0,2l"
+    },
+    {
+        "id": "78a3cf33-1a26-439d-a482-9c0784f5bd2b",
+        "category": "Wein / Sekt",
+        "name": "Spätburgunder Weißherbst",
+        "price": 3.9,
+        "details": "(Q.b.a./Baden)",
+        "size": "0,2l"
+    },
+    {
+        "id": "8986fae9-5a89-4721-a0fa-52b40067cb0f",
+        "category": "Wein / Sekt",
+        "name": "Spätburgunder",
+        "price": 3.9,
+        "details": "(Q.b.a./Baden)",
+        "size": "0,2l"
+    },
+    {
+        "id": "4eae36ab-c46c-4f69-b9e9-fe86896133c8",
+        "category": "Wein / Sekt",
+        "name": "Rioja Ugarte",
+        "price": 3.9,
+        "details": "(Spanien)",
+        "size": "0,2l"
+    },
+    {
+        "id": "bfcc54f8-20ce-4ce3-8ef8-ab52889f1502",
+        "category": "Wein / Sekt",
+        "name": "Französischer Landwein",
+        "price": 2.8,
+        "details": "(L.f., France)",
+        "size": "0,2l"
+    },
+    {
+        "id": "811f89b8-ef1d-40a8-a126-7742ff0b91da",
+        "category": "Wein / Sekt",
+        "name": "Schorle weiß - vom Gutedel",
+        "price": 2.9,
+        "size": "0,25l"
+    },
+    {
+        "id": "bb7e542b-c502-468a-8b62-c6bb16f7f309",
+        "category": "Wein / Sekt",
+        "name": "Schorle rot / weißherbst",
+        "price": 3.2,
+        "size": "0,25l"
+    },
+    {
+        "id": "d8131c13-20f0-4a2d-9634-55fb80a4b004",
+        "category": "Wein / Sekt",
+        "name": "Sekt (piccolo)",
+        "price": 5.4,
+        "size": "0,2l"
+    },
+    {
+        "id": "ad7b724f-2db5-4eb1-9ada-4c348609e677",
+        "category": "Wein / Sekt",
+        "name": "Met (Honigwein)",
+        "price": 3.2,
+        "size": "0,25l"
+    },
+    {
+        "id": "21b8a940-dc01-4a21-8ee1-4a9753092e7c",
+        "category": "Wein / Sekt",
+        "name": "MetBier (Pils und Honigwein)",
+        "price": 4.5,
+        "size": "0,5l"
+    },
+    {
+        "id": "1665234a-5552-402b-b6a3-71bd7231263e",
+        "category": "Wein / Sekt",
+        "name": "Heidelbeerwein",
+        "price": 2.6,
+        "details": "1,2",
+        "size": "0,25l"
+    },
+    {
+        "id": "0cb73af9-0ac6-4105-a176-033558b8de6f",
+        "category": "Wein / Sekt",
+        "name": "Calimocho / Korea (Rotwein und Cola)",
+        "price": 3.8,
+        "details": "1,5",
+        "size": "0,3l"
+    },
+    {
+        "id": "84482519-8f18-4fd2-af79-592629d70eeb",
+        "category": "Wein / Sekt",
+        "name": "Cola weiß / Südkorea (Weißwein und Cola)",
+        "price": 3.8,
+        "details": "1,5",
+        "size": "0,3l"
+    },
+    {
+        "id": "5b90cb9c-3a2c-4e1c-a966-045fca994a40",
+        "category": "Wein / Sekt",
+        "name": "MAGNERS Cider (original, berry oder pear)",
+        "price": 6.0,
+        "size": "0,5l"
+    },
+    {
+        "id": "744049d0-4d6c-4325-a15f-1bf362cb02c1",
+        "category": "Wein / Sekt",
+        "name": "Pernod (mit Eis -/- Wasser)",
+        "price": 3.9,
+        "details": "1",
+        "size": "4cl"
+    },
+    {
+        "id": "13a9cff0-fe01-4de0-b762-b6e423390177",
+        "category": "Wein / Sekt",
+        "name": "Ricard (mit Eise -/- Wasser)",
+        "price": 3.9,
+        "details": "1",
+        "size": "4cl"
+    },
+    {
+        "id": "f0972ef8-44d4-469a-a6f8-0bd68e7c7731",
+        "category": "Wein / Sekt",
+        "name": "Pastis 51 (mit Eis -/- Wasser)",
+        "price": 3.8,
+        "size": "4cl"
+    },
+    {
+        "id": "e78054ea-6cc7-4b2c-8f48-c0b220d239ce",
+        "category": "Wein / Sekt",
+        "name": "Martini bianco",
+        "price": 3.2,
+        "size": "4cl"
+    },
+    {
+        "id": "686332f0-506f-4a81-9ac8-eb44fdefae4f",
+        "category": "Longdrinks / Cocktails",
+        "name": "Jack Daniel's",
+        "price": 6.2,
+        "details": "Cola oder Ginger Ale"
+    },
+    {
+        "id": "b821ed23-5397-42af-8333-cdbc5712ada2",
+        "category": "Longdrinks / Cocktails",
+        "name": "Lynchburg Lemonade",
+        "price": 6.7
+    },
+    {
+        "id": "74918389-123a-4661-a657-6ce9f2554894",
+        "category": "Longdrinks / Cocktails",
+        "name": "Jack Daniel’s Tennessee Rye",
+        "price": 6.7,
+        "details": "Ginger"
+    },
+    {
+        "id": "23da1883-daac-44ec-b279-0061e30d1b49",
+        "category": "Longdrinks / Cocktails",
+        "name": "Jack Honey",
+        "price": 5.9,
+        "details": "Ginger oder Tonic"
+    },
+    {
+        "id": "2acd8965-9b38-4d84-aebc-7cd950179521",
+        "category": "Longdrinks / Cocktails",
+        "name": "Finlandia Vodka",
+        "price": 6.0,
+        "details": "Tonic"
+    },
+    {
+        "id": "52d98b1b-d2e5-43a4-b387-ddee5ba88728",
+        "category": "Longdrinks / Cocktails",
+        "name": "Southern Comfort",
+        "price": 5.6,
+        "details": "Tonic oder Lemon"
+    },
+    {
+        "id": "77c64f64-520d-4387-8a57-467d8367d076",
+        "category": "Longdrinks / Cocktails",
+        "name": "Licor43 con leche",
+        "price": 5.2
+    },
+    {
+        "id": "51a20efe-8878-4a49-a476-928c05666c74",
+        "category": "Longdrinks / Cocktails",
+        "name": "Captain Cola",
+        "price": 5.2,
+        "details": "Captain Morgan spiced + Cola"
+    },
+    {
+        "id": "6e2d7ccd-412e-49dc-8586-e0906cbeb71c",
+        "category": "Longdrinks / Cocktails",
+        "name": "Bacardi Cola",
+        "price": 5.2
+    },
+    {
+        "id": "1da2561e-7505-4d15-92f8-b3f373a42a17",
+        "category": "Longdrinks / Cocktails",
+        "name": "Gin Tonic",
+        "price": 5.0,
+        "details": "Hausmarke Gin + Schweppes"
+    },
+    {
+        "id": "10c0738c-6645-4330-91a8-426d328472b9",
+        "category": "Longdrinks / Cocktails",
+        "name": "Vodka Lemon",
+        "price": 5.0,
+        "details": "oder Cola oder Orange oder Mango"
+    },
+    {
+        "id": "a73a3b96-029f-4526-8357-40851173dbb0",
+        "category": "Longdrinks / Cocktails",
+        "name": "Campari Orange",
+        "price": 5.0
+    },
+    {
+        "id": "6ee556c7-8db7-42c3-b2da-2c94d2d7b9d8",
+        "category": "Longdrinks / Cocktails",
+        "name": "Batida Kirsch",
+        "price": 5.0,
+        "details": "oder Orange oder Maracuja"
+    },
+    {
+        "id": "b127a934-3338-4a97-9afc-860dfc01bc05",
+        "category": "Longdrinks / Cocktails",
+        "name": "Beton",
+        "price": 5.2,
+        "details": "Becherovka Tonic"
+    },
+    {
+        "id": "f7a7f74c-65b6-4d0e-a8cf-e465134186b4",
+        "category": "Longdrinks / Cocktails",
+        "name": "Grappelsovka",
+        "price": 5.2,
+        "details": "Grasovka Vodka + Apfelsaft"
+    },
+    {
+        "id": "dace685a-a78d-4004-b10e-71307da2316b",
+        "category": "Longdrinks / Cocktails",
+        "name": "Cuba Libre",
+        "price": 5.8
+    },
+    {
+        "id": "1f77a83d-f548-4daa-9bde-c5fb2af890a3",
+        "category": "Longdrinks / Cocktails",
+        "name": "Vodka Mate",
+        "price": 6.2
+    },
+    {
+        "id": "744ce0e4-e2cd-4bd7-911f-267274323698",
+        "category": "Longdrinks / Cocktails",
+        "name": "Long Eimer Icetea (12cl)",
+        "price": 10.6,
+        "details": "!! *0,5 Liter* !!"
+    },
+    {
+        "id": "7ec7b5af-9484-443e-a343-a29bb9528b08",
+        "category": "Longdrinks / Cocktails",
+        "name": "Asbach gedopt (2cl)",
+        "price": 2.5
+    },
+    {
+        "id": "efea29ac-4709-43eb-836e-2f5fd11613cf",
+        "category": "Longdrinks / Cocktails",
+        "name": "White Russian",
+        "price": 6.4
+    },
+    {
+        "id": "d55270bb-7ce7-4749-87a0-22aa40efb39e",
+        "category": "Longdrinks / Cocktails",
+        "name": "Moscow Mule",
+        "price": 7.0
+    },
+    {
+        "id": "f767a16e-54db-4acb-9ddc-b82389323042",
+        "category": "Longdrinks / Cocktails",
+        "name": "Effect Energy",
+        "price": 6.9,
+        "details": "+4cl Vodka oder +4cl Jägermeister"
+    },
+    {
+        "id": "1169773a-5b72-40d8-9ad8-2b0745f9ad4f",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Jack Daniel's Old No.7",
+        "price": 3.0,
+        "size": "2cl"
+    },
+    {
+        "id": "f27edb7e-400e-401c-a9c0-cb327f3eb4a9",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Jack Tennessee Fire oder Jack Honey",
+        "price": 2.6,
+        "size": "2cl"
+    },
+    {
+        "id": "cdc705c6-4fcf-41b8-88fd-ca836ae9a14e",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Jack Daniel’s Single Barrel oder Single Barrel Rye",
+        "price": 3.6,
+        "size": "2cl"
+    },
+    {
+        "id": "5a57b49d-ce44-4651-94d4-66d047445641",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "El Jimador Tequila blanco/reposado",
+        "price": 2.4,
+        "size": "2cl"
+    },
+    {
+        "id": "795b6b50-cea0-424f-b01f-5e2eb8521f89",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Vodka Finlandia oder Grasovka",
+        "price": 2.6,
+        "size": "2cl"
+    },
+    {
+        "id": "567b308a-2ec0-4968-a5ab-2881adefdd6d",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Mexikaner",
+        "price": 1.7,
+        "size": "2cl"
+    },
+    {
+        "id": "1f3b24b4-8840-4577-a81f-da2b3dfda474",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Joster",
+        "price": 1.2,
+        "size": "2cl"
+    },
+    {
+        "id": "93fb4694-7ef2-487d-b651-dd0e915a6848",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Pfeffi",
+        "price": 1.2,
+        "details": "Pfefferminz-Likör",
+        "size": "2cl"
+    },
+    {
+        "id": "6b11d12a-b8aa-4261-9069-ecd7536a6b17",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Jägermeister",
+        "price": 1.9,
+        "size": "2cl"
+    },
+    {
+        "id": "a8c6d47f-6c15-4b4b-8bbf-1ea02960103c",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Sambuca Molinari",
+        "price": 2.2,
+        "size": "2cl"
+    },
+    {
+        "id": "faeceb25-7d27-40d1-98bd-813342ca4bb4",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Ramazzotti auf Eis",
+        "price": 4.4,
+        "size": "4cl"
+    },
+    {
+        "id": "c834168d-154c-4cca-b7cd-baad2ba13987",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Ouzo 12",
+        "price": 2.2,
+        "size": "2cl"
+    },
+    {
+        "id": "61fb54a2-3546-4abd-aaa0-b03540164f41",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Vodka Hausmarke",
+        "price": 1.9,
+        "size": "2cl"
+    },
+    {
+        "id": "ee068dd4-d55c-44d1-b917-1e4c9c5ead55",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "HM Tequila Gold o. Silver",
+        "price": 2.0,
+        "details": "mit Zitrone/ Orange +10ct",
+        "size": "2cl"
+    },
+    {
+        "id": "5f299726-c578-40a4-a1b2-8dfd6c0b9996",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Mezcal",
+        "price": 2.8,
+        "details": "wer bekommt den Wurm?",
+        "size": "2cl"
+    },
+    {
+        "id": "12c93c58-2695-45d3-b133-e980e5b0c682",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Brandy Osborne Veterano",
+        "price": 2.4,
+        "size": "2cl"
+    },
+    {
+        "id": "4b7bd30d-c685-47c6-88f4-2acfda9884c3",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Agwa de Bolivia",
+        "price": 2.7,
+        "details": "Coca leaf Liqueur",
+        "size": "2cl"
+    },
+    {
+        "id": "18fda44f-810b-41e9-af2a-99ea8ff4aa9d",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Gut Badisch",
+        "price": 2.2,
+        "details": "Obstler, Mirabelle, Williams, Honigschnäpsle u.v.m.",
+        "size": "2cl"
+    },
+    {
+        "id": "c5ba5d6d-73db-476c-b4b1-c3615b672c5d",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Hafelnuff-Fnappff",
+        "price": 2.2,
+        "details": "Nuff-Likör-Fnappf (auf Nüffen)",
+        "size": "2cl"
+    },
+    {
+        "id": "b6a755c0-931b-4dc5-97e0-de4bb6d47de5",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Ratzeputz",
+        "price": 3.0,
+        "size": "2cl"
+    },
+    {
+        "id": "6cff6c31-ab08-46fe-b2af-373f91b624a2",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Dos Mas",
+        "price": 2.2,
+        "details": "Zimt-Tequila-Likör",
+        "size": "2cl"
+    },
+    {
+        "id": "49f570bf-661f-4a2b-a1db-ad7a2f2c082b",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Bailey's Irish cream",
+        "price": 3.8,
+        "size": "4cl"
+    },
+    {
+        "id": "866cd457-4097-4648-b7b9-1421a364e06f",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Little Lebowski",
+        "price": 2.5,
+        "details": "Vodka + Kaffelikör, Baileys",
+        "size": "2cl"
+    },
+    {
+        "id": "fb2eed3f-e473-4d13-890f-98116b2a1420",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Rache der Sith",
+        "price": 2.5,
+        "details": "Kaffeelikör, Pfefferminzlikör, Chilischnaps",
+        "size": "2cl"
+    },
+    {
+        "id": "7ae90e8b-1168-4b32-bf99-f6bc7f42d2bc",
+        "category": "Absinthe",
+        "name": "Lasala",
+        "size": "2cl",
+        "details": "Spanien, 50%, 4mg Thujon",
+        "price": 3.8
+    },
+    {
+        "id": "5a11e3c3-33f3-445c-9b23-f0db74f69bc0",
+        "category": "Absinthe",
+        "name": "Lasala",
+        "size": "4cl",
+        "details": "Spanien, 50%, 4mg Thujon",
+        "price": 6.2
+    },
+    {
+        "id": "f08787d4-16e0-4035-b84a-3afd38704199",
+        "category": "Absinthe",
+        "name": "Pigalle",
+        "size": "2cl",
+        "details": "Schweiz, 70%, Thujon k.A.",
+        "price": 3.9
+    },
+    {
+        "id": "35340b38-3d5b-4b34-97f1-059abd0c10ff",
+        "category": "Absinthe",
+        "name": "Pigalle",
+        "size": "4cl",
+        "details": "Schweiz, 70%, Thujon k.A.",
+        "price": 6.4
+    },
+    {
+        "id": "f97995bc-02f9-473d-a449-468ce78dc231",
+        "category": "Absinthe",
+        "name": "Mata Hari",
+        "size": "2cl",
+        "details": "Österreich, 60%, 35 mg Thujon",
+        "price": 4.2
+    },
+    {
+        "id": "5bdb9be4-48ba-45c4-a069-dab06a9283ed",
+        "category": "Absinthe",
+        "name": "Mata Hari",
+        "size": "4cl",
+        "details": "Österreich, 60%, 35 mg Thujon",
+        "price": 6.9
+    },
+    {
+        "id": "7f35c50c-7c79-4c3f-a5b5-4c143e5b6fea",
+        "category": "Absinthe",
+        "name": "Mansinth",
+        "size": "2cl",
+        "details": "Schweiz, 66%, Thujon k.A.",
+        "price": 4.4
+    },
+    {
+        "id": "32dc7a9c-deab-46c8-ad2e-dcd58ff29dbd",
+        "category": "Absinthe",
+        "name": "Mansinth",
+        "size": "4cl",
+        "details": "Schweiz, 66%, Thujon k.A.",
+        "price": 6.9
+    }
+]

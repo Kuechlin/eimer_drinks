@@ -1,21 +1,25 @@
 export interface Drink {
+  id: string; // <-- Add unique ID
   category: string;
   name: string;
-  details?: string; // Optional details like ingredients or descriptions
-  size?: string; // Optional size
+  details?: string;
+  size?: string;
   price: number;
+  isCustom?: boolean; // <-- Flag for custom items
 }
 
 export interface Person {
-  id: string; // Unique identifier for each person
+  id: string;
   name: string;
 }
 
 export interface Order {
-  id: string; // Unique identifier for the order item
-  personId: string; // Which person ordered this
+  id: string;
+  personId: string;
+  // Store drink details directly in the order
+  drinkId: string; // Reference the drink ID
   drinkName: string;
   drinkSize?: string;
   price: number;
-  timestamp: number; // When it was ordered (for potential sorting)
+  timestamp: number;
 }

@@ -1,0 +1,147 @@
+/* src/components/MenuManager.module.css */
+
+.menuManagerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.customFormBox,
+.fullMenuBox {
+  border: 1px solid var(--color-border, #ccc);
+  border-radius: 5px;
+  padding: 15px;
+  background-color: var(--color-surface-alt, #f9f9f9);
+}
+
+.customFormBox h2,
+.fullMenuBox h2 {
+  margin-top: 0;
+  color: var(--color-secondary, #2b2a29);
+  border-bottom: 1px solid var(--color-border-light, #eee);
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.customItemForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.formGroup label {
+  font-size: 0.85em;
+  color: var(--color-text-muted, #555);
+  font-weight: bold;
+}
+
+.customItemForm input[type="text"],
+.customItemForm input[type="number"] {
+  padding: 8px 10px;
+  border: 1px solid var(--color-border, #ccc);
+  border-radius: 4px;
+  font-size: 1em;
+  background-color: var(--input-background, #fff);
+  color: var(--color-text);
+}
+
+.customItemForm input:focus {
+  outline: none;
+  border-color: var(--color-primary, #ef7f1a);
+  box-shadow: 0 0 0 2px rgba(239, 127, 26, 0.2);
+}
+
+.addButton {
+  padding: 10px 15px;
+  background-color: var(--color-success);
+  color: var(--color-text-inverted);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 5px;
+  transition: background-color 0.2s ease;
+}
+.addButton:hover {
+  background-color: var(--color-success-dark);
+}
+
+/* Full Menu Display */
+.categorySection {
+  margin-bottom: 20px;
+}
+.categorySection:last-child {
+  margin-bottom: 0;
+}
+
+.categorySection h3 {
+  color: var(--color-primary);
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 400px; /* Allow scrolling within categories */
+  overflow-y: auto;
+}
+
+.menuItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--color-border-light);
+  font-size: 0.95em;
+}
+.menuItem:last-child {
+  border-bottom: none;
+}
+
+.menuItem > span {
+  /* Text part */
+  flex-grow: 1;
+  margin-right: 10px;
+  line-height: 1.4;
+  color: var(--color-text);
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.menuItem .price {
+  font-weight: bold;
+  color: var(--color-success-dark);
+  margin-left: 5px;
+}
+
+.deleteButton {
+  background-color: var(--color-danger);
+  color: var(--color-text-inverted);
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0;
+  font-weight: bold;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-left: 10px;
+  transition: background-color 0.2s ease;
+}
+.deleteButton:hover {
+  background-color: var(--color-danger-dark);
+}
