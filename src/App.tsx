@@ -176,8 +176,13 @@ function App() {
           </a>
           !
         </p>
-        <button onClick={handleResetData} className={styles.resetButton}>
-          Reset All Data
+        <button
+          onClick={handleResetData}
+          className={styles.resetButton}
+          aria-label="Reset All Data" // Keep aria-label for accessibility
+          title="Reset All Data" // Add title for tooltip on hover (desktop)
+        >
+          {"×"} {/* Use trash can emoji */}
         </button>
       </header>
 

@@ -59,21 +59,34 @@
 }
 
 /* Buttons in Header */
+/* Update Reset Button styles */
 .resetButton {
-  background-color: var(--color-danger); /* Keep themed background */
-  /* --- CHANGE HERE: Ensure text is always light --- */
-  color: #ffffff; /* Use fixed white text for contrast */
+  background-color: var(--color-danger);
+  color: var(--color-text-inverted); /* Usually white */
   border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
+  /* Make it more square and adjust size */
+  width: 30px;
+  height: 30px;
+  padding: 0; /* Remove padding if centering icon */
+  border-radius: 50%; /* Make it round */
   cursor: pointer;
-  font-size: 0.8em;
+  font-size: 1.2em; /* Adjust emoji size */
   position: absolute;
   top: 10px;
   right: 15px;
+  /* Center the icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1; /* Reset line height for flex centering */
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 .resetButton:hover {
   background-color: var(--color-danger-dark);
+  transform: scale(1.1); /* Slightly bigger pop on hover */
+}
+.resetButton:active {
+  transform: scale(1); /* Click effect */
 }
 
 .themeToggleButton {
