@@ -2,14 +2,14 @@
 
 [![Deploy to GitHub Pages](https://github.com/<YOUR_USERNAME>/<YOUR_REPOSITORY_NAME>/actions/workflows/deploy.yml/badge.svg)](https://github.com/<YOUR_USERNAME>/<YOUR_REPOSITORY_NAME>/actions/workflows/deploy.yml)
 
-So, you're heading down to the **Eimer** in Freiburg for a night of good music[cite: 2, 3], maybe some Kicker[cite: 3], and definitely a few rounds with your mates? Awesome! But who had what? How many Pils[cite: 130], Hefeweizen[cite: 138], Guinness[cite: 158], or maybe even an Absinthe[cite: 334]? Did someone _really_ order that many Mexikaner[cite: 677]?
+So, you're heading down to the **Eimer** in Freiburg for a night of good music, maybe some Kicker, and definitely a few rounds with your mates? Awesome! But who had what? How many Pils, Hefeweizen, Guinness, or maybe even an Absinthe? Did someone _really_ order that many Mexikaner?
 
-Fear not, this little app is here to save your beer-soaked napkin calculations! Built specifically for keeping tabs on who's drinking what at the legendary Eimer Music Pub[cite: 2].
+Fear not, this little app is here to save your beer-soaked napkin calculations! Built specifically for keeping tabs on who's drinking what at the legendary Eimer Music Pub.
 
 ## What's this thing do then? 🤔
 
 - **Friend Zone:** List who's in your drinking crew for the night.
-- **Drink Log:** Quickly tap in who grabbed which brew (or shot, or longdrink...) using the actual Eimer drink list[cite: 1].
+- **Drink Log:** Quickly tap in who grabbed which brew (or shot, or longdrink...) using the actual Eimer drink list.
 - **Damage Report:** See a running log of the orders. No more "Did _I_ order that?" arguments.
 - **The Reckoning:** Get a summary of drinks per person and the total cost. Settle up without the headache (well, _that_ headache anyway).
 - **Dark Mode:** Because staring at a bright screen in the glorious dimness of the Eimer is just wrong. Toggle it on! 🌙
@@ -18,7 +18,7 @@ Fear not, this little app is here to save your beer-soaked napkin calculations! 
 ## Features on Tap 🍺
 
 - Add/Select friends joining the session.
-- Browse/Search the _actual_ Eimer drink menu (extracted from their site! [cite: 1]).
+- Browse/Search the _actual_ Eimer drink menu (extracted from their site!).
 - Assign drinks to the selected person.
 - View a real-time order log.
 - Remove mistaken orders (we've all been there).
@@ -34,7 +34,7 @@ Fear not, this little app is here to save your beer-soaked napkin calculations! 
 - **TypeScript** (To try and keep the bugs out)
 - **CSS Modules** (Keeps the styles from fighting each other)
 - **GitHub Actions** (For automatic deployment)
-- Pure digital elbow grease & possibly some caffeine[cite: 5, 362].
+- Pure digital elbow grease & possibly some caffeine.
 
 ## Get it Running (Locally) 💻
 
