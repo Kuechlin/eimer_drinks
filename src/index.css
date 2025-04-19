@@ -1,60 +1,88 @@
 /* src/index.css */
-body {
-  font-family: sans-serif;
-  margin: 0;
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.5; /* Add baseline line-height */
-}
 
-/* Define CSS Variables for colors (optional but recommended) */
+/* Define Light theme variables (default) */
 :root {
   --color-primary: #ef7f1a; /* Eimer Orange */
   --color-primary-dark: #e06a00;
   --color-secondary: #2b2a29; /* Eimer Dark */
+  --color-success: #4caf50;
+  --color-success-dark: #367c39;
+  --color-danger: #f44336;
+  --color-danger-dark: #d32f2f;
+
+  /* Light Theme Specifics */
   --color-background: #f4f4f4;
   --color-surface: #ffffff;
   --color-surface-alt: #f9f9f9;
   --color-text: #333333;
   --color-text-muted: #555555;
+  --color-text-inverted: #ffffff; /* Text on dark backgrounds */
   --color-border: #cccccc;
   --color-border-light: #eeeeee;
-  --color-success: #4caf50;
-  --color-success-dark: #367c39;
-  --color-danger: #f44336;
-  --color-danger-dark: #d32f2f;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --input-background: #ffffff;
+  --hover-background: #f0f0f0;
+  --tab-background: #eeeeee;
+  --tab-hover: #dddddd;
 }
 
-/* Apply variables (example) */
+/* Define Dark theme overrides */
+body[data-theme="dark"] {
+  --color-primary: #ff983e; /* Lighter Orange for dark */
+  --color-primary-dark: #ef7f1a; /* Original Orange becomes dark variant */
+  --color-secondary: #eeeeee; /* Lighter secondary */
+  --color-success: #81c784; /* Lighter green */
+  --color-success-dark: #4caf50; /* Original green */
+  --color-danger: #e57373; /* Lighter red */
+  --color-danger-dark: #f44336; /* Original red */
+
+  /* Dark Theme Specifics */
+  --color-background: #121212; /* Very dark grey */
+  --color-surface: #1e1e1e; /* Dark grey */
+  --color-surface-alt: #2a2a2a; /* Slightly lighter dark grey */
+  --color-text: #e0e0e0; /* Light grey text */
+  --color-text-muted: #aaaaaa; /* Medium grey text */
+  --color-text-inverted: #121212; /* Text on light backgrounds */
+  --color-border: #444444; /* Dark border */
+  --color-border-light: #333333; /* Lighter dark border */
+  --shadow-color: rgba(255, 255, 255, 0.1);
+  --input-background: #2a2a2a;
+  --hover-background: #333333;
+  --tab-background: #2a2a2a;
+  --tab-hover: #383838;
+}
+
+/* Apply base styles using variables */
 body {
+  font-family: sans-serif;
+  margin: 0;
   background-color: var(--color-background);
   color: var(--color-text);
+  line-height: 1.5;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth theme transition */
 }
 
+/* Other global styles (resets, etc.) */
 button {
-  /* Basic button reset */
   cursor: pointer;
   font-family: inherit;
 }
-
 input,
 select,
 button {
-  font-size: 1em; /* Consistent base font size */
+  font-size: 1em;
 }
-
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 0.5em 0; /* Basic heading margin */
+  margin: 0 0 0.5em 0;
   line-height: 1.3;
 }

@@ -1,7 +1,6 @@
 /* src/components/DrinkSelector.module.css */
 
 .componentBox {
-  /* Assuming a shared basic box style, or define specific here */
   border: 1px solid var(--color-border, #ccc);
   border-radius: 5px;
   padding: 15px;
@@ -23,16 +22,16 @@
 .filters {
   display: flex;
   flex-direction: column; /* Stack filters vertically on mobile */
-  gap: 12px; /* Increased gap slightly */
+  gap: 12px;
   margin-bottom: 15px;
-  padding-bottom: 15px; /* Increased padding */
+  padding-bottom: 15px;
   border-bottom: 1px solid var(--color-border-light, #eee);
 }
 
 .filterItem {
   display: flex;
   flex-direction: column;
-  gap: 4px; /* Slightly increased gap */
+  gap: 4px;
 }
 
 .filterItem label {
@@ -48,27 +47,36 @@
   border: 1px solid var(--color-border, #ccc);
   border-radius: 4px;
   font-size: 1em;
-  background-color: var(--color-surface, #fff);
+  background-color: var(--input-background, #fff); /* Use variable */
+  color: var(--color-text); /* Use variable */
   width: 100%;
   box-sizing: border-box;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Add placeholder styling */
+.filters input[type="text"]::placeholder {
+  color: var(--color-text-muted);
+  opacity: 0.7;
 }
 
 .filters select:focus,
 .filters input[type="text"]:focus {
   outline: none;
   border-color: var(--color-primary, #ef7f1a);
-  box-shadow: 0 0 0 2px rgba(239, 127, 26, 0.2); /* Subtle focus ring */
+  box-shadow: 0 0 0 2px rgba(239, 127, 26, 0.2); /* Use fixed color or create variable */
 }
 
 /* Style overrides for select dropdown */
 .filters select {
-  appearance: none;
+  appearance: none; /* Remove default arrow */
+  /* Corrected background-image with hardcoded grey color and double quotes */
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23888888%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 10px auto;
-  padding-right: 30px;
+  padding-right: 30px; /* Keep space for arrow */
+  /* Other select styles like padding, border, font-size, etc. remain */
 }
 
 /* Wrapper for search input and clear button */
@@ -89,8 +97,8 @@
   right: 5px;
   top: 50%;
   transform: translateY(-50%);
-  background: #ccc;
-  color: #fff;
+  background: #ccc; /* Keep neutral or use a variable */
+  color: var(--color-text-inverted, #fff);
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -105,19 +113,20 @@
 }
 
 .clearSearchButton:hover {
-  background-color: #aaa;
+  background-color: #aaa; /* Keep neutral or use a variable */
 }
 
 /* Drink List styles */
 .drinkList {
   list-style: none;
   padding: 0;
-  margin: 10px 0 0 0; /* Add some top margin */
-  max-height: 300px; /* Adjust as needed */
+  margin: 10px 0 0 0;
+  max-height: 300px;
   overflow-y: auto;
   border: 1px solid var(--color-border-light, #eee);
   border-radius: 3px;
-  flex-grow: 1; /* Allow list to take remaining space in flex column */
+  flex-grow: 1;
+  background-color: var(--color-surface, #fff); /* Ensure background */
 }
 
 .drinkItem {
@@ -131,6 +140,9 @@
 .drinkItem:last-child {
   border-bottom: none;
 }
+.drinkItem:hover {
+  background-color: var(--hover-background); /* Use variable */
+}
 
 .drinkInfo {
   flex-grow: 1;
@@ -142,31 +154,31 @@
 
 .drinkName {
   font-weight: bold;
-  color: var(--color-secondary, #2b2a29); /* Darker name */
+  color: var(--color-text); /* Use variable */
 }
 .drinkSize {
   font-style: italic;
-  color: var(--color-text-muted, #555);
+  color: var(--color-text-muted);
   font-size: 0.9em;
-  margin-left: 4px; /* Space after name */
+  margin-left: 4px;
 }
 .drinkPrice {
-  color: var(--color-success-dark, #367c39); /* Darker Green price */
+  color: var(--color-success-dark); /* Use variable */
   font-weight: bold;
   margin-left: 4px;
 }
 .drinkDetails {
-  color: #777;
+  color: var(--color-text-muted); /* Use variable */
   font-size: 0.85em;
-  display: block; /* Keep details on new line */
+  display: block;
   margin-top: 2px;
 }
 
 /* Add Drink Button Styles */
 .addDrinkButton {
   padding: 5px 10px;
-  background-color: var(--color-success, #4caf50);
-  color: white;
+  background-color: var(--color-success);
+  color: var(--color-text-inverted); /* Ensure contrast */
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -179,28 +191,29 @@
   flex-shrink: 0;
 }
 .addDrinkButton:hover {
-  background-color: var(--color-success-dark, #367c39);
+  background-color: var(--color-success-dark);
   transform: scale(1.05);
 }
 .addDrinkButton:disabled {
-  background-color: #a5d6a7; /* Lighter green when disabled/added */
+  background-color: #a5d6a7; /* Keep specific light green or derive from var */
+  color: var(--color-text-muted);
   cursor: default;
   transform: none;
-  font-size: 1.1em; /* Adjust checkmark size */
+  font-size: 1.1em;
 }
 
 /* Feedback Styles */
 @keyframes fadeBackground {
   from {
     background-color: #c8e6c9;
-  }
+  } /* Keep specific light green */
   to {
     background-color: transparent;
   }
 }
 
 .addedFeedback {
-  /* Renamed class for feedback */
+  /* Feedback class */
   animation: fadeBackground 1s ease-out;
 }
 
@@ -216,16 +229,16 @@
   }
 
   .filterItem.searchFilter {
-    /* Give search more space potentially */
+    /* Target specific class name from TSX */
     flex-grow: 2;
   }
 
   .filters select,
   .filters input[type="text"] {
-    width: auto; /* Allow inputs to size naturally */
+    width: auto;
   }
 
   .drinkList {
-    max-height: 450px; /* Restore taller list */
+    max-height: 450px;
   }
 }

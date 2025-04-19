@@ -1,51 +1,68 @@
 /* src/App.module.css */
 
-.appContainer {
+/* Global layout rules for .app-container can stay here */
+.app-container {
   margin: 0 auto;
-  background-color: var(--color-surface, #fff);
+  background-color: var(--color-surface); /* Use variable */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  transition: background-color 0.3s ease;
 }
 
+/* Global desktop styles */
+@media (min-width: 768px) {
+  .app-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0;
+    box-shadow: 0 0 10px var(--shadow-color); /* Use variable */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+}
+/* Header Styles */
 .header {
   text-align: center;
-  border-bottom: 2px solid var(--color-primary, #ef7f1a);
+  border-bottom: 2px solid var(--color-primary); /* Keep themed border */
   padding: 10px 15px;
   margin-bottom: 0;
-  background-color: var(--color-secondary, #2b2a29);
-  color: #fff;
-  position: relative; /* For reset button positioning */
+  /* --- CHANGE HERE: Use fixed dark color --- */
+  background-color: #2b2a29; /* Always use Eimer Dark */
+  /* --- Ensure text color provides contrast --- */
+  color: #eeeeee; /* Use a light text color by default for header */
+  position: relative;
 }
 
 .title {
-  /* Replaces header h1 */
-  color: var(--color-primary, #ef7f1a);
+  /* Title color uses primary theme color which adapts nicely */
+  color: var(--color-primary);
   margin: 0 0 5px 0;
   font-size: 1.5em;
 }
 
 .subtitle {
-  /* Replaces header p */
-  display: none; /* Hidden on mobile by default */
-  color: #ccc;
+  display: none;
+  /* Use a light grey that works on the fixed dark background */
+  color: #cccccc;
   margin-top: 5px;
   font-size: 0.9em;
 }
 
 .headerLink {
-  /* Replaces header a */
-  color: var(--color-primary, #ef7f1a);
+  /* Link color uses primary theme color */
+  color: var(--color-primary);
   text-decoration: none;
 }
 .headerLink:hover {
   text-decoration: underline;
 }
 
+/* Buttons in Header */
 .resetButton {
-  /* Replaces header .reset-button */
-  background-color: var(--color-danger, #f44336);
-  color: white;
+  background-color: var(--color-danger); /* Keep themed background */
+  /* --- CHANGE HERE: Ensure text is always light --- */
+  color: #ffffff; /* Use fixed white text for contrast */
   border: none;
   padding: 5px 10px;
   border-radius: 4px;
@@ -56,67 +73,86 @@
   right: 15px;
 }
 .resetButton:hover {
-  background-color: var(--color-danger-dark, #d32f2f);
+  background-color: var(--color-danger-dark);
 }
 
-/* Tab Navigation */
+.themeToggleButton {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  background: none;
+  /* Border and text use primary theme color which adapts */
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1.2em;
+  line-height: 28px;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.themeToggleButton:hover {
+  background-color: var(--color-primary);
+  /* --- CHANGE HERE: Ensure hover text is dark --- */
+  color: #2b2a29; /* Use fixed dark color for hover text */
+}
+
+/* Tab Navigation and Content styles remain the same, using variables */
 .tabNav {
+  /* ... existing styles using variables ... */
   display: flex;
   justify-content: space-around;
-  background-color: #eee;
-  border-bottom: 1px solid var(--color-border, #ccc);
-  flex-shrink: 0; /* Prevent nav from shrinking */
+  background-color: var(--tab-background);
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
 }
-
 .tabButton {
-  /* Replaces .tab-nav button */
+  /* ... existing styles using variables ... */
   flex-grow: 1;
   padding: 12px 5px;
   border: none;
   background-color: transparent;
   cursor: pointer;
   font-size: 0.95em;
-  color: var(--color-text-muted, #555);
+  color: var(--color-text-muted);
   border-bottom: 3px solid transparent;
   transition: background-color 0.2s ease, border-color 0.2s ease,
     color 0.2s ease;
   text-align: center;
-  white-space: nowrap; /* Prevent text wrapping */
+  white-space: nowrap;
 }
-
 .tabButton:hover {
-  background-color: #ddd;
+  /* ... existing styles using variables ... */
+  background-color: var(--tab-hover);
 }
-
-.tabButton.active {
-  /* Combined with .active class */
-  color: var(--color-primary, #ef7f1a);
+.active {
+  /* ... existing styles using variables ... */
+  color: var(--color-primary);
   font-weight: bold;
-  border-bottom-color: var(--color-primary, #ef7f1a);
+  border-bottom-color: var(--color-primary);
 }
-
-/* Tab Content Area */
 .tabContent {
+  /* ... existing styles using variables ... */
   padding: 15px;
-  flex-grow: 1; /* Allow content to fill remaining space */
-  background-color: var(--color-surface, #fff);
-  overflow-y: auto; /* Allow content itself to scroll if needed */
-  /* We need this for flex children */
+  flex-grow: 1;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
 }
-
 .tabPanel {
+  /* ... existing styles using variables ... */
   display: flex;
   flex-direction: column;
   gap: 15px;
-  flex-grow: 1; /* Allow panel to grow */
+  flex-grow: 1;
 }
 
 /* --- Desktop Styles --- */
 @media (min-width: 768px) {
-  /* .appContainer styles are mostly global in index.css now */
-
   .header {
     padding: 15px;
   }
@@ -130,25 +166,28 @@
     padding: 8px 12px;
     font-size: 0.9em;
   }
+  .themeToggleButton {
+    width: 36px;
+    height: 36px;
+    font-size: 1.5em;
+    line-height: 34px;
+  }
 
   .tabContent {
     padding: 20px;
   }
 
-  /* Desktop layout for Add tab */
-  .tabPanel.addPanel {
-    /* Target specific panel class */
+  /* Desktop layout for Add tab panel */
+  .addPanel {
     flex-direction: row;
     align-items: flex-start;
   }
-  .tabPanel.addPanel > div:first-child {
-    /* PersonManager */
-    flex: 1 1 300px; /* Flex: grow shrink basis */
-    max-width: 350px; /* Max width for person list */
-    flex-shrink: 0; /* Don't shrink person list */
+  .addPanel > div:first-child {
+    flex: 1 1 300px;
+    max-width: 350px;
+    flex-shrink: 0;
   }
-  .tabPanel.addPanel > div:last-child {
-    /* DrinkSelector or messages */
-    flex: 2 1 400px; /* Allow drink list to grow more */
+  .addPanel > div:last-child {
+    flex: 2 1 400px;
   }
 }

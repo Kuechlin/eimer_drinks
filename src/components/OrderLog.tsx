@@ -56,4 +56,3 @@ const OrderLog: React.FC<OrderLogProps> = ({
 };
 
 export default OrderLog;
-c;

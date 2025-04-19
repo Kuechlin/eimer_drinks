@@ -17,8 +17,9 @@ const DrinkSelector: React.FC<DrinkSelectorProps> = ({
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [justAddedId, setJustAddedId] = useState<string | null>(null);
-  const [feedbackTimeoutId, setFeedbackTimeoutId] =
-    useState<NodeJS.Timeout | null>(null);
+  const [feedbackTimeoutId, setFeedbackTimeoutId] = useState<number | null>(
+    null
+  );
 
   const categories = useMemo(() => {
     const cats = new Set(drinks.map((d) => d.category));
