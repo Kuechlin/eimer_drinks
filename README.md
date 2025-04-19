@@ -1,54 +1,68 @@
-# React + TypeScript + Vite
+# Eimer Drink Tracker - Keep the Rounds Straight! 🍻🤘
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Deploy to GitHub Pages](https://github.com/<YOUR_USERNAME>/<YOUR_REPOSITORY_NAME>/actions/workflows/deploy.yml/badge.svg)](https://github.com/<YOUR_USERNAME>/<YOUR_REPOSITORY_NAME>/actions/workflows/deploy.yml)
 
-Currently, two official plugins are available:
+So, you're heading down to the **Eimer** in Freiburg for a night of good music[cite: 2, 3], maybe some Kicker[cite: 3], and definitely a few rounds with your mates? Awesome! But who had what? How many Pils[cite: 130], Hefeweizen[cite: 138], Guinness[cite: 158], or maybe even an Absinthe[cite: 334]? Did someone _really_ order that many Mexikaner[cite: 677]?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Fear not, this little app is here to save your beer-soaked napkin calculations! Built specifically for keeping tabs on who's drinking what at the legendary Eimer Music Pub[cite: 2].
 
-## Expanding the ESLint configuration
+## What's this thing do then? 🤔
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Friend Zone:** List who's in your drinking crew for the night.
+- **Drink Log:** Quickly tap in who grabbed which brew (or shot, or longdrink...) using the actual Eimer drink list[cite: 1].
+- **Damage Report:** See a running log of the orders. No more "Did _I_ order that?" arguments.
+- **The Reckoning:** Get a summary of drinks per person and the total cost. Settle up without the headache (well, _that_ headache anyway).
+- **Dark Mode:** Because staring at a bright screen in the glorious dimness of the Eimer is just wrong. Toggle it on! 🌙
+- **It Remembers!** Uses your browser's `localStorage`, so even if you accidentally refresh after that _one_ extra shot, your tab should still be there.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Features on Tap 🍺
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Add/Select friends joining the session.
+- Browse/Search the _actual_ Eimer drink menu (extracted from their site! [cite: 1]).
+- Assign drinks to the selected person.
+- View a real-time order log.
+- Remove mistaken orders (we've all been there).
+- See a summary breakdown per person and total cost.
+- Light/Dark theme toggle.
+- Persistent storage using `localStorage`.
+- Responsive design for mobile use (because who brings a laptop to the pub?).
+- Deployed automatically via GitHub Actions to GitHub Pages.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Tech Stack Fueling This Engine 🛠️
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **React** with **Vite** (Keeps things speedy)
+- **TypeScript** (To try and keep the bugs out)
+- **CSS Modules** (Keeps the styles from fighting each other)
+- **GitHub Actions** (For automatic deployment)
+- Pure digital elbow grease & possibly some caffeine[cite: 5, 362].
+
+## Get it Running (Locally) 💻
+
+1.  **Clone the repo:**
+    ```bash
+    git clone [https://github.com/](https://github.com/)<YOUR_USERNAME>/<YOUR_REPOSITORY_NAME>.git
+    cd <YOUR_REPOSITORY_NAME>
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or if you prefer yarn:
+    # yarn install
+    ```
+3.  **Fire it up!**
+    ```bash
+    npm run dev
+    # or
+    # yarn dev
+    ```
+4.  Open your browser to the local address provided (usually `http://localhost:5173`).
+
+## Deployment 🚀
+
+This project uses a GitHub Actions workflow (`.github/workflows/deploy.yml`) to automatically build and deploy to GitHub Pages whenever changes are pushed to the `main` branch.
+
+Make sure your `vite.config.ts` has the correct `base` path set!
+
+---
+
+Now, go forth, enjoy the Eimer, and keep track responsibly (or at least, _accurately_)! Prost! 🍻
