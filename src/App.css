@@ -1,0 +1,323 @@
+/* src/App.css */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.app-container {
+  /* Remove max-width for mobile-first approach */
+  /* max-width: 1200px; */
+  margin: 0 auto; /* No horizontal margin on mobile */
+  padding: 0; /* Remove padding for edge-to-edge feel */
+  background-color: #fff;
+  /* Remove box-shadow for mobile, maybe add back for desktop */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  min-height: 100vh; /* Ensure it takes full height */
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  border-bottom: 2px solid #ef7f1a; /* Eimer Orange */
+  padding: 10px 15px; /* Adjust padding */
+  margin-bottom: 0; /* Remove margin */
+  background-color: #2b2a29; /* Dark background for header */
+  color: #fff; /* White text */
+  position: relative; /* Needed for reset button positioning if desired */
+}
+
+header h1 {
+  color: #ef7f1a; /* Eimer Orange */
+  margin: 0 0 5px 0;
+  font-size: 1.5em; /* Adjust size for mobile */
+}
+
+header p {
+  /* Hide the link paragraph on mobile initially */
+  display: none;
+}
+
+header a {
+  color: #ef7f1a; /* Orange link */
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: underline;
+}
+
+header .reset-button {
+  background-color: #f44336; /* Red */
+  color: white;
+  border: none;
+  padding: 5px 10px; /* Smaller padding */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8em; /* Smaller font */
+  /* Position top right corner (optional) */
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+header .reset-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Tab Navigation */
+.tab-nav {
+  display: flex;
+  justify-content: space-around; /* Distribute tabs evenly */
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab-nav button {
+  flex-grow: 1; /* Make buttons fill space */
+  padding: 12px 5px; /* Vertical padding, less horizontal */
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 0.95em;
+  color: #555;
+  border-bottom: 3px solid transparent; /* Indicator space */
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  text-align: center;
+}
+
+.tab-nav button:hover {
+  background-color: #ddd;
+}
+
+.tab-nav button.active {
+  color: #ef7f1a; /* Orange active text */
+  font-weight: bold;
+  border-bottom-color: #ef7f1a; /* Orange indicator */
+}
+
+/* Tab Content Area */
+.tab-content {
+  padding: 15px; /* Add padding around tab content */
+  flex-grow: 1; /* Allow content to fill remaining space */
+  background-color: #fff; /* White background for content */
+  overflow-y: auto; /* Allow content itself to scroll if needed */
+}
+
+.tab-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between components within a tab */
+}
+
+.component-box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #f9f9f9; /* Slightly off-white background */
+  /* Remove fixed heights if any were set previously */
+}
+
+.component-box h2 {
+  margin-top: 0;
+  color: #2b2a29;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+/* Keep specific component styles (PersonManager, DrinkSelector, OrderLog, Summary) */
+/* Ensure lists inside components are scrollable if they get too long */
+.person-list,
+.drink-list,
+.order-list,
+.summary-box .person-summary ul {
+  max-height: 300px; /* Adjust max height for mobile */
+  overflow-y: auto;
+  border: 1px solid #eee; /* Add border to scrollable areas */
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* Style adjustments for lists */
+.person-list,
+.drink-list,
+.order-list,
+.summary-drink-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.person-list li,
+.drink-item,
+.order-item,
+.summary-drink-list li {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+.person-list li:last-child,
+.drink-item:last-child,
+.order-item:last-child,
+.summary-drink-list li:last-child {
+  border-bottom: none;
+}
+
+/* Summary Specific adjustments */
+.summary-box .person-summary {
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.summary-box .person-summary:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.summary-box h3 {
+  margin-top: 0;
+  border-top: none;
+  padding-top: 0;
+  margin-bottom: 8px;
+}
+.summary-box hr {
+  margin: 15px 0 10px 0;
+  border-top: 1px solid #ccc;
+}
+.summary-box p strong {
+  font-size: 1.15em;
+}
+
+/* --- Desktop Styles --- */
+@media (min-width: 768px) {
+  .app-container {
+    max-width: 1200px; /* Restore max-width */
+    margin: 20px auto; /* Restore margin */
+    padding: 15px; /* Restore padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Restore shadow */
+  }
+
+  header {
+    padding: 15px; /* Restore padding */
+  }
+  header h1 {
+    font-size: 2em; /* Restore size */
+  }
+  header p {
+    /* Show the link paragraph on desktop */
+    display: block;
+    color: #ccc;
+    margin-top: 5px;
+    font-size: 0.9em;
+  }
+  header .reset-button {
+    padding: 8px 12px;
+    font-size: 0.9em;
+  }
+
+  /* Keep tabs, but maybe rearrange content for Add tab */
+  .tab-content {
+    padding: 20px;
+  }
+
+  /* Example: If you want the Add tab to revert to two columns on desktop */
+  .tab-panel.add-panel {
+    flex-direction: row; /* Side-by-side */
+    align-items: flex-start; /* Align items to top */
+  }
+  .tab-panel.add-panel > div:first-child {
+    /* PersonManager */
+    flex: 1; /* Adjust flex ratio as needed */
+  }
+  .tab-panel.add-panel > div:last-child {
+    /* DrinkSelector or messages */
+    flex: 2; /* Adjust flex ratio */
+  }
+
+  /* Adjust scrollable list heights for desktop */
+  .person-list,
+  .drink-list,
+  .order-list,
+  .summary-box .person-summary ul {
+    max-height: 450px; /* Taller lists on desktop */
+  }
+}
+
+/* PersonManager Styles */
+.add-person-form {
+  display: flex;
+  margin-bottom: 10px;
+  /* Ensure it doesn't shrink below its content */
+  flex-shrink: 0;
+}
+
+.add-person-form input {
+  flex-grow: 1; /* Allow input to grow */
+  flex-shrink: 1; /* Allow input to shrink */
+  min-width: 50px; /* Prevent input from becoming too small */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px 0 0 3px;
+  font-size: 1em; /* Ensure font size is readable */
+}
+
+.add-person-form button {
+  padding: 8px 12px; /* Ensure consistent padding */
+  background-color: #ef7f1a;
+  color: white;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  font-size: 1em; /* Match input font size */
+  /* Prevent the button from shrinking too much */
+  flex-shrink: 0;
+  white-space: nowrap; /* Keep "Add" on one line */
+}
+.add-person-form button:hover {
+  background-color: #e06a00;
+}
+
+.person-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0; /* Add margin top */
+  max-height: 150px; /* Limit height */
+  overflow-y: auto; /* Add scroll */
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+.person-list li {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.person-list li:last-child {
+  border-bottom: none;
+}
+.person-list li:hover {
+  background-color: #f0f0f0;
+}
+.person-list li.selected {
+  background-color: #ef7f1a;
+  color: white;
+  font-weight: bold;
+}
+
+/* --- Desktop Styles --- */
+@media (min-width: 768px) {
+  /* ... (desktop specific styles remain the same) ... */
+
+  /* Ensure desktop form button padding is slightly larger if desired */
+  .add-person-form button {
+    padding: 8px 15px;
+  }
+
+  /* Adjust list heights for desktop */
+  .person-list,
+  .drink-list,
+  .order-list,
+  .summary-box .person-summary ul {
+    max-height: 450px; /* Taller lists on desktop */
+  }
+}
