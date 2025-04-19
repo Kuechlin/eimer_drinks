@@ -416,3 +416,199 @@ header .reset-button:hover {
   /* Styles apply when showing checkmark */
   font-size: 1.1em; /* Adjust size if needed */
 }
+
+/* Filters Section Styles */
+.filters {
+  display: flex;
+  flex-direction: column; /* Stack filters vertically on mobile */
+  gap: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column; /* Stack label above input */
+  gap: 3px;
+}
+
+.filter-item label {
+  font-size: 0.85em;
+  color: #555;
+  font-weight: bold;
+}
+
+/* Style for both select and text input */
+.filters select,
+.filters input[type="text"] {
+  padding: 10px 12px; /* Increase padding for better touch */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em; /* Ensure readable font size */
+  background-color: #fff;
+  width: 100%; /* Make them take full width of container */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Style overrides for select dropdown */
+.filters select {
+  appearance: none; /* Remove default arrow */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23888888%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"); /* Simple SVG arrow */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px auto;
+  padding-right: 30px; /* Make space for arrow */
+}
+
+/* Wrapper for search input and clear button */
+.search-input-wrapper {
+  position: relative;
+  display: flex; /* Use flex to align input and button */
+  align-items: center;
+}
+
+.search-input-wrapper input[type="text"] {
+  padding-right: 30px; /* Add padding to avoid text going under the button */
+  width: 100%; /* Ensure input takes available space */
+}
+
+/* Clear Search Button Styles */
+.clear-search-button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ccc;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  font-size: 14px;
+  line-height: 20px; /* Adjust for vertical centering */
+  text-align: center;
+  padding: 0;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.clear-search-button:hover {
+  background-color: #aaa;
+}
+
+/* Drink List adjustments (if needed) */
+.drink-list {
+  /* Maybe add some top margin if filters feel too close */
+  margin-top: 10px;
+  /* (Keep existing styles like max-height, overflow-y etc.) */
+}
+
+/* ... (rest of component styles) ... */
+
+/* Desktop Styles Adjustments for Filters */
+@media (min-width: 768px) {
+  .filters {
+    flex-direction: row; /* Filters side-by-side on desktop */
+    align-items: flex-end; /* Align items to bottom */
+  }
+
+  .filter-item {
+    flex-grow: 1; /* Allow items to grow */
+  }
+
+  /* Optionally give search filter more space */
+  .filter-item.search-filter {
+    flex-grow: 2;
+  }
+
+  .filters select,
+  .filters input[type="text"] {
+    /* Inputs don't need to be 100% width anymore */
+    width: auto;
+  }
+}
+
+/* OrderLog Styles */
+.order-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0; /* Add margin top */
+  max-height: 300px; /* Keep scroll height */
+  overflow-y: auto;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  background-color: #fff; /* Ensure background for list items */
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px; /* Increased padding */
+  border-bottom: 1px solid #f0f0f0; /* Lighter border */
+  font-size: 0.95em;
+  transition: background-color 0.2s ease; /* Hover effect */
+}
+.order-item:last-child {
+  border-bottom: none; /* Remove border for the last item */
+}
+.order-item:hover {
+  background-color: #f9f9f9; /* Subtle hover background */
+}
+
+/* Style the text part of the order item */
+.order-item > span {
+  flex-grow: 1; /* Allow text to take available space */
+  margin-right: 10px; /* Space before the button */
+  line-height: 1.4; /* Improve readability */
+  /* Target the name if it's wrapped in something or just make first part bold */
+  /* If getPersonName returns just text, this is harder. Assuming simple structure: */
+  /* We can make the whole line slightly bolder if desired */
+}
+
+/* Style the person's name if possible (requires markup change potentially)
+   Alternatively, make the price stand out */
+.order-item > span::after {
+  /* Example: Styling the price implicitly */
+  content: ""; /* This won't work directly, better to wrap price if needed */
+  /* Instead, let's rely on the existing structure */
+}
+
+.order-item .remove-button {
+  background-color: #ef7f1a; /* Use Eimer Orange for remove */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: bold; /* Make X bolder */
+  line-height: 1;
+  padding: 3px 7px; /* Adjust padding */
+  margin-left: 10px;
+  flex-shrink: 0; /* Prevent shrinking */
+  transition: background-color 0.2s ease;
+}
+.order-item .remove-button:hover {
+  background-color: #d36000; /* Darker orange */
+}
+
+/* Style the empty log message */
+.log-panel .component-box > p {
+  /* Target the 'No drinks' paragraph */
+  font-style: italic;
+  color: #888;
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+}
+
+/* Adjust list height on desktop if needed */
+@media (min-width: 768px) {
+  .order-list {
+    max-height: 450px; /* Taller list on desktop */
+  }
+  /* Add back any desktop-specific layout adjustments if desired */
+}
