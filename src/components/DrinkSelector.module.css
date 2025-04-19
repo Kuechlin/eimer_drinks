@@ -1,31 +1,40 @@
 /* src/components/DrinkSelector.module.css */
-
 .componentBox {
+  /* ... other styles (border, padding, background) ... */
   border: 1px solid var(--color-border, #ccc);
   border-radius: 5px;
   padding: 15px;
   background-color: var(--color-surface-alt, #f9f9f9);
+  /* Ensure it's a flex container that allows children to grow */
   display: flex;
-  flex-direction: column; /* Ensure flex direction for content */
+  flex-direction: column;
+  /* Let the component box itself grow if its parent allows */
+  /* This is important if DrinkSelector is inside another flex container */
+  flex-grow: 1; /* Allow this component to grow */
+  overflow: hidden; /* Prevent content from spilling out if calculation is tricky */
 }
 
 .componentBox h2 {
+  /* ... existing styles ... */
   margin-top: 0;
   color: var(--color-secondary, #2b2a29);
   border-bottom: 1px solid var(--color-border-light, #eee);
   padding-bottom: 5px;
   margin-bottom: 10px;
   font-size: 1.2em;
+  flex-shrink: 0; /* Prevent header from shrinking */
 }
 
 /* Filters Section Styles */
 .filters {
+  /* ... existing styles ... */
   display: flex;
-  flex-direction: column; /* Stack filters vertically on mobile */
+  flex-direction: column;
   gap: 12px;
   margin-bottom: 15px;
   padding-bottom: 15px;
   border-bottom: 1px solid var(--color-border-light, #eee);
+  flex-shrink: 0; /* Prevent filters from shrinking */
 }
 
 .filterItem {
@@ -121,15 +130,28 @@
   list-style: none;
   padding: 0;
   margin: 10px 0 0 0;
-  max-height: 300px;
+  /* --- CHANGES START --- */
+  /* Remove fixed max-height */
+  /* max-height: 300px; */
+
+  /* Allow the list to grow and fill available space */
+  flex-grow: 1;
+
+  /* Keep overflow for when content exceeds the calculated space */
   overflow-y: auto;
+
+  /* Add min-height: 0 as a flexbox trick if scrolling doesn't work right */
+  min-height: 0;
+  /* --- CHANGES END --- */
+
   border: 1px solid var(--color-border-light, #eee);
   border-radius: 3px;
-  flex-grow: 1;
-  background-color: var(--color-surface, #fff); /* Ensure background */
+  background-color: var(--color-surface, #fff);
 }
 
+/* Styles for .drinkItem and its children remain the same */
 .drinkItem {
+  /* ... existing styles ... */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -236,9 +258,5 @@
   .filters select,
   .filters input[type="text"] {
     width: auto;
-  }
-
-  .drinkList {
-    max-height: 450px;
   }
 }
