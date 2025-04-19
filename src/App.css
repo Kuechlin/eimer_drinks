@@ -321,3 +321,98 @@ header .reset-button:hover {
     max-height: 450px; /* Taller lists on desktop */
   }
 }
+
+/* DrinkSelector Styles */
+.drink-list {
+  /* (Keep existing styles like max-height, overflow-y etc.) */
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
+.drink-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px; /* Adjusted padding */
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease-out; /* Transition for feedback */
+}
+.drink-item:last-child {
+  border-bottom: none;
+}
+
+.drink-info {
+  flex-grow: 1;
+  margin-right: 10px;
+  /* Allow text wrapping */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.drink-name {
+  font-weight: bold;
+}
+.drink-size {
+  font-style: italic;
+  color: #555;
+  font-size: 0.9em;
+}
+.drink-price {
+  color: #008000; /* Green price */
+  font-weight: bold;
+}
+.drink-details {
+  color: #777;
+  font-size: 0.85em;
+  display: block;
+}
+
+/* New Add Drink Button Styles */
+.add-drink-button {
+  padding: 5px 10px; /* Make button slightly larger */
+  background-color: #4caf50; /* Green add button */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Slightly less round */
+  cursor: pointer;
+  font-size: 1.2em; /* Larger symbol */
+  line-height: 1;
+  font-weight: bold;
+  min-width: 30px; /* Ensure minimum width */
+  text-align: center;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+.add-drink-button:hover {
+  background-color: #367c39;
+  transform: scale(1.05); /* Slight grow on hover */
+}
+.add-drink-button:disabled {
+  background-color: #a5d6a7; /* Lighter green when disabled/added */
+  cursor: default;
+  transform: none;
+}
+
+/* Feedback Styles */
+@keyframes fadeBackground {
+  from {
+    background-color: #c8e6c9;
+  } /* Start slightly green */
+  to {
+    background-color: transparent;
+  } /* Fade to transparent */
+}
+
+.drink-item.added-feedback {
+  /* Apply the animation */
+  animation: fadeBackground 1s ease-out;
+  /* You could keep a subtle permanent background too if desired */
+  /* background-color: #f0fff0; */
+}
+
+/* Optional: Style the checkmark in the button during feedback */
+.add-drink-button:disabled {
+  /* Styles apply when showing checkmark */
+  font-size: 1.1em; /* Adjust size if needed */
+}
