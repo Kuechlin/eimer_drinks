@@ -3,70 +3,70 @@
         "id": "af13ab46-86b1-4299-9b82-b2d68357c928",
         "category": "Bier vom Fass",
         "name": "Fürstenberg Pils",
-        "price": 4.2,
+        "price": 4.4,
         "size": "0,5l"
     },
     {
         "id": "416af0b6-d5a5-4e39-8ab2-36dca5573003",
         "category": "Bier vom Fass",
         "name": "Fürstenberg Pils",
-        "price": 3.0,
+        "price": 3.2,
         "size": "0,3l"
     },
     {
         "id": "f54ec23f-f407-4093-b89a-08a1201a7955",
         "category": "Bier vom Fass",
         "name": "Hefeweizen Fürstenberg",
-        "price": 4.4,
+        "price": 4.6,
         "size": "0,5l"
     },
     {
         "id": "e5b172bb-055d-4000-bd04-e19789d94388",
         "category": "Bier vom Fass",
         "name": "Hefeweizen Fürstenberg",
-        "price": 3.2,
+        "price": 3.4,
         "size": "0,3l"
     },
     {
         "id": "3c915d03-1de8-4699-83ec-c15391ed817a",
         "category": "Bier vom Fass",
         "name": "Riegeler Landbier",
-        "price": 4.2,
+        "price": 4.6,
         "size": "0,5l"
     },
     {
         "id": "0f877ba7-22e7-4095-b984-db45a123f3e8",
         "category": "Bier vom Fass",
         "name": "Riegeler Landbier",
-        "price": 3.0,
+        "price": 3.4,
         "size": "0,3l"
     },
     {
         "id": "d8e39209-e450-4907-ac79-2801fc15b420",
         "category": "Bier vom Fass",
         "name": "Hacker-Pschorr naturtrüb",
-        "price": 4.4,
+        "price": 4.7,
         "size": "0,5l"
     },
     {
         "id": "487e4940-923f-44c5-b874-4a51a34b59e0",
         "category": "Bier vom Fass",
         "name": "Guinness Irish Draught",
-        "price": 4.8,
+        "price": 5.2,
         "size": "0,4l"
     },
     {
         "id": "7e7bc5b7-9c35-417f-8a92-fc57297f49f4",
         "category": "Bier vom Fass",
         "name": "Irish Radler (Guinness mit Ingwerlimo)",
-        "price": 5.8,
+        "price": 5.5,
         "size": "0,4l"
     },
     {
         "id": "4c65ce63-7d08-4471-889a-0b3483eb660f",
         "category": "Bier vom Fass",
         "name": "Radler",
-        "price": 3.8,
+        "price": 4.2,
         "details": "2",
         "size": "0,5l"
     },
@@ -74,7 +74,7 @@
         "id": "4259b8e3-5405-40ee-a6eb-b765ab65f322",
         "category": "Bier vom Fass",
         "name": "Cola-Bier",
-        "price": 3.8,
+        "price": 4.2,
         "details": "1, 5",
         "size": "0,5l"
     },
@@ -82,7 +82,7 @@
         "id": "eb85624c-c094-457f-a2c0-4308d11267d5",
         "category": "Bier vom Fass",
         "name": "Weizen-Radler",
-        "price": 4.2,
+        "price": 4.6,
         "details": "2",
         "size": "0,5l"
     },
@@ -90,29 +90,36 @@
         "id": "bf08f337-6118-4e3a-bee6-a3d7ef47acf3",
         "category": "Bier vom Fass",
         "name": "Cola-Weizen",
-        "price": 4.2,
+        "price": 4.6,
         "details": "1, 5",
         "size": "0,5l"
     },
     {
         "id": "b7c34ec5-5369-4a48-b545-75cf780e0535",
         "category": "Bier vom Fass",
-        "name": "Apfel-Radler (Radler sauer + Apfel)",
-        "price": 3.8,
+        "name": "Apfel oder Grapefruit Radler (Radler sauer + Apfel oder Grapefruit)",
+        "price": 4.2,
         "size": "0,5l"
     },
     {
         "id": "bf031dda-0096-443d-ab73-9e9954428169",
         "category": "Flaschenbier",
-        "name": "Heineken",
-        "price": 3.6,
+        "name": "Elzacher Kräusen-Pils",
+        "price": 3.2,
+        "size": "0,33l"
+    },    
+    {
+        "id": "bf031ddb-0097-443e-ab74-9e9954428170",
+        "category": "Flaschenbier",
+        "name": "Lammsbräu Bio glutenfrei",
+        "price": 3.4,
         "size": "0,33l"
     },
     {
         "id": "eb0ff765-066f-44cf-a791-5a2030b204fa",
         "category": "Flaschenbier",
         "name": "Riegeler Landbier",
-        "price": 3.8,
+        "price": 3.9,
         "size": "0,5l"
     },
     {
@@ -126,14 +133,14 @@
         "id": "408d2795-8133-4868-b4b7-80070c3a61b3",
         "category": "Flaschenbier",
         "name": "Diebels Alt",
-        "price": 2.9,
+        "price": 3.4,
         "size": "0,33l"
     },
     {
         "id": "011400d1-362a-421b-8f2c-31de562e5d01",
         "category": "Flaschenbier",
         "name": "Krefelder (Alt + Cola)",
-        "price": 3.8,
+        "price": 4.4,
         "details": "1,5",
         "size": "0,5l"
     },
@@ -141,35 +148,35 @@
         "id": "1ab825bf-f7bd-425f-993b-3ab321c4f253",
         "category": "Flaschenbier",
         "name": "Kristallweizen Fürstenberg",
-        "price": 4.0,
+        "price": 4.2,
         "size": "0,5l"
     },
     {
         "id": "f1d22307-d288-496e-9c22-fb48e1f50d7b",
         "category": "Flaschenbier",
         "name": "Hefeweizen dunkel Fürstenberg",
-        "price": 4.0,
+        "price": 4.2,
         "size": "0,5l"
     },
     {
         "id": "d17a804d-9f37-4ce3-b837-a7ca149815eb",
         "category": "Flaschenbier",
         "name": "Andechs Doppelbock (7,1%vol.)",
-        "price": 4.6,
+        "price": 4.8,
         "size": "0,5l"
     },
     {
         "id": "f570d1c5-0a08-467d-9679-c4b52d540352",
         "category": "Flaschenbier",
         "name": "Paulaner Hefeweizen alkoholfrei",
-        "price": 4.0,
+        "price": 4.4,
         "size": "0,5l"
     },
     {
         "id": "4cd0fd8a-5265-4940-98a2-301b6a471532",
         "category": "Flaschenbier",
         "name": "Hacker-Pschorr naturtrüb alkoholfrei",
-        "price": 4.0,
+        "price": 4.4,
         "size": "0,5l"
     },
     {
@@ -184,15 +191,13 @@
         "category": "Alkoholfreie Getränke",
         "name": "Tafelwasser klein",
         "price": 1.5,
-        "details": "1,5",
         "size": "0,3l"
     },
     {
         "id": "a0424fef-bc36-4586-a2e1-29182c7231df",
         "category": "Alkoholfreie Getränke",
         "name": "Tafelwasser groß",
-        "price": 1.9,
-        "details": "1,5",
+        "price": 2.0,
         "size": "0,4l"
     },
     {
@@ -216,7 +221,7 @@
         "category": "Alkoholfreie Getränke",
         "name": "Spezi",
         "price": 2.6,
-        "details": "1,4,5",
+        "details": "1,4",
         "size": "0,3l"
     },
     {
@@ -237,16 +242,15 @@
     {
         "id": "4e248a24-905c-4f4d-a513-0ddc2f537348",
         "category": "Alkoholfreie Getränke",
-        "name": "Orangina rouge",
-        "price": 2.6,
-        "details": "1,3",
-        "size": "0,25l"
+        "name": "Ebner Saftschorle Rhabarber oder Birne-Holunder",
+        "price": 3.2,
+        "size": "0,33l"
     },
     {
         "id": "21caa314-e347-4cde-b643-85156a6f3be0",
         "category": "Alkoholfreie Getränke",
         "name": "Karamalz",
-        "price": 2.7,
+        "price": 2.8,
         "details": "1,3",
         "size": "0,33l"
     },
@@ -260,7 +264,7 @@
     {
         "id": "d26fc037-2638-467b-aaab-7426b3bcd670",
         "category": "Alkoholfreie Getränke",
-        "name": "Wostok Kräuterlimonade",
+        "name": "Wostok Kräuterlimonade nicht verfügbar",
         "price": 3.0,
         "details": "5",
         "size": "0,33l"
@@ -269,7 +273,7 @@
         "id": "b7a48704-6ab7-4801-aa2c-f873805900b3",
         "category": "Alkoholfreie Getränke",
         "name": "Cola, Orangenlimo, Zitronenlimo, Spezi",
-        "price": 3.0,
+        "price": 3.2,
         "details": "1,4,5",
         "size": "0,4l"
     },
@@ -284,7 +288,7 @@
         "id": "5839e00d-9f44-4109-abb6-fea00e322c42",
         "category": "Alkoholfreie Getränke",
         "name": "Saft / Nektar (s.o.) groß",
-        "price": 360.0,
+        "price": 3.8,
         "size": "0,4l"
     },
     {
@@ -339,7 +343,7 @@
         "category": "Alkoholfreie Getränke",
         "name": "Bitter Lemon",
         "price": 2.4,
-        "details": "1,2,6",
+        "details": "1,2",
         "size": "0,2l"
     },
     {
@@ -347,13 +351,13 @@
         "category": "Alkoholfreie Getränke",
         "name": "Tonic Water o. Ginger Ale",
         "price": 2.4,
-        "details": "1,2,6",
+        "details": "1,2",
         "size": "0,2l"
     },
     {
         "id": "817f802c-b2ff-4c00-a9da-089f234c0692",
         "category": "Alkoholfreie Getränke",
-        "name": "Proviant Limo Rhabarber o. Zitrone-Ingwer (vegan)",
+        "name": "Proviant Limo Rhabarber o. Zitrone-Ingwer (vegan) nichtverfügbar",
         "price": 3.0,
         "size": "0,33l"
     },
@@ -361,7 +365,7 @@
         "id": "46fdda78-68f3-4d58-939f-1cf3c982dc04",
         "category": "Alkoholfreie Getränke",
         "name": "Flora-Power Mate (Eistee)",
-        "price": 3.0,
+        "price": 3.5,
         "details": "1,5",
         "size": "0,33l"
     },
@@ -377,120 +381,120 @@
         "id": "73fc0199-e2ee-47e6-b5ea-d7e87cded6c1",
         "category": "Heiße Getränke",
         "name": "Kaffee Fairtrade (oder koffeinfrei)",
-        "price": 2.2
+        "price": 2.4
     },
     {
         "id": "3ef53665-eeaf-47a2-b575-92e8e6eb55a6",
         "category": "Heiße Getränke",
         "name": "Espresso Fairtrade",
-        "price": 2.0
+        "price": 2.4
     },
     {
         "id": "2ed46d97-9ada-4aa3-9429-d3793474a5ba",
         "category": "Heiße Getränke",
         "name": "Milchkaffee",
-        "price": 2.9
+        "price": 3.2
     },
     {
         "id": "9f89fef1-564a-4bf6-a368-6269fc65378b",
         "category": "Heiße Getränke",
-        "name": "Großer Milchkaffee (Schale)",
-        "price": 3.4
+        "name": "Heiße Schokolade mit Sahne",
+        "price": 3.5
     },
     {
         "id": "d1ca9a01-8ba6-4efb-b0ee-d6546985d2d0",
         "category": "Heiße Getränke",
         "name": "Latte macchiato",
-        "price": 3.9
+        "price": 4.2
     },
     {
         "id": "d6244a20-403b-4bb7-922e-b0b43d4d22af",
         "category": "Heiße Getränke",
-        "name": "Heiße Schokolade + Sahne",
+        "name": "Heiße Schokolade mit Milchschaum",
         "price": 3.2
     },
     {
         "id": "3490edc2-5756-45ed-ab3e-58345baa0915",
         "category": "Heiße Getränke",
-        "name": "Ovomaltine",
-        "price": 3.2
+        "name": "Doppio (doppelt Kaffee)",
+        "price": 3.5
     },
     {
         "id": "df894a01-e7f5-4618-9ff9-15336d1e64d4",
         "category": "Heiße Getränke",
         "name": "Heiße Milch mit Honig",
-        "price": 3.2
+        "price": 3.5
     },
     {
         "id": "81ca4791-8abb-4a8e-b9d7-d3cd65ee3708",
         "category": "Heiße Getränke",
-        "name": "Tee: Schwarz, Kamille, Minze, Kräuter, Fenchel, Früchte, ...",
-        "price": 1.9
+        "name": "Tee: Schwarz, Kamille, Minze, Kräuter, Fenchel, Früchte, miregalirgendeins, ...",
+        "price": 2.6
     },
     {
         "id": "1cf3da05-4e55-43e8-a1e7-8bfc75796274",
         "category": "Heißgetränke mit Spirit",
-        "name": "Carahillo",
-        "price": 2.8
+        "name": "Carahillo (Espresso & Brandy)",
+        "price": 3.2
     },
     {
         "id": "b749e013-66dd-4063-b25a-928b359b3beb",
         "category": "Heißgetränke mit Spirit",
-        "name": "Lumumba",
-        "price": 3.6
+        "name": "Lumumba (Schoki & Rum)",
+        "price": 3.9
     },
     {
         "id": "3eeecd39-8efb-4706-aa2f-563211ed5b07",
         "category": "Heißgetränke mit Spirit",
         "name": "Kaffee Bailey's o. Amaretto",
-        "price": 3.6
+        "price": 3.9
     },
     {
         "id": "5b296f1d-c734-4f93-85c2-11279b567b0c",
         "category": "Heißgetränke mit Spirit",
-        "name": "Irish Coffee",
-        "price": 4.2
+        "name": "Irish Coffee (Kaffee & Irish Whiskey, Sahne)",
+        "price": 4.9
     },
     {
         "id": "a2bd2810-feae-448d-aa93-f30718457ac2",
         "category": "Heißgetränke mit Spirit",
-        "name": "Gaelic Tea",
+        "name": "Gaelic Tea (Schwarztee, frischer Ingwer, Honigwhiskey)",
         "price": 4.2
     },
     {
         "id": "28254834-52b0-4a62-9893-534a54db9fb7",
         "category": "Heißgetränke mit Spirit",
-        "name": "Espresso Punch",
+        "name": "Espresso Pinga ( Espresso, Cachaça)",
         "price": 2.6
     },
     {
         "id": "55b2f22e-4a05-4024-a510-835645ff799a",
         "category": "Heißgetränke mit Spirit",
-        "name": "Espresso Mexicano",
+        "name": "Espresso Mexicano Espresso, Tequila, Schockosirup)",
         "price": 2.8
     },
     {
         "id": "66165dd2-eff3-4687-bfa0-84d6be0fb687",
         "category": "Heißgetränke mit Spirit",
-        "name": "Espresso Badisch",
+        "name": "Espresso Badisch (Espresso, Badischer Schnaps)",
         "price": 3.0
     },
     {
         "id": "59a27e81-1496-472c-bf72-e4373dc2af53",
         "category": "Heißgetränke mit Spirit",
-        "name": "Hot Mall Santa",
+        "name": "Hot Mall Santa (Espresso, Pfefferminzlikör)",
         "price": 2.4
     },
     {
         "id": "89e2885e-8c2a-43c7-870d-695a671b406b",
         "category": "Heißgetränke mit Spirit",
-        "name": "Grog",
-        "price": 3.2
+        "name": "Grog (Schwarztee, Rum)",
+        "price": 3.6
     },
     {
         "id": "7b562bc5-4456-4142-8bc6-478b31d2b2d8",
         "category": "Heißgetränke mit Spirit",
-        "name": "Grog80",
+        "name": "Grog80 (Schwarztee & Stroh-Rum 80%)",
         "price": 3.8
     },
     {
