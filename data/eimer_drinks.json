@@ -577,21 +577,21 @@
         "id": "ad7b724f-2db5-4eb1-9ada-4c348609e677",
         "category": "Wein / Sekt",
         "name": "Met (Honigwein)",
-        "price": 3.2,
+        "price": 3.4,
         "size": "0,25l"
     },
     {
         "id": "21b8a940-dc01-4a21-8ee1-4a9753092e7c",
         "category": "Wein / Sekt",
         "name": "MetBier (Pils und Honigwein)",
-        "price": 4.5,
+        "price": 5.2,
         "size": "0,5l"
     },
     {
         "id": "1665234a-5552-402b-b6a3-71bd7231263e",
         "category": "Wein / Sekt",
         "name": "Heidelbeerwein",
-        "price": 2.6,
+        "price": 2.8,
         "details": "1,2",
         "size": "0,25l"
     },
@@ -599,7 +599,7 @@
         "id": "0cb73af9-0ac6-4105-a176-033558b8de6f",
         "category": "Wein / Sekt",
         "name": "Calimocho / Korea (Rotwein und Cola)",
-        "price": 3.8,
+        "price": 4.0,
         "details": "1,5",
         "size": "0,3l"
     },
@@ -607,7 +607,7 @@
         "id": "84482519-8f18-4fd2-af79-592629d70eeb",
         "category": "Wein / Sekt",
         "name": "Cola weiß / Südkorea (Weißwein und Cola)",
-        "price": 3.8,
+        "price": 4.0,
         "details": "1,5",
         "size": "0,3l"
     },
@@ -622,7 +622,7 @@
         "id": "744049d0-4d6c-4325-a15f-1bf362cb02c1",
         "category": "Wein / Sekt",
         "name": "Pernod (mit Eis -/- Wasser)",
-        "price": 3.9,
+        "price": 4.5,
         "details": "1",
         "size": "4cl"
     },
@@ -630,7 +630,7 @@
         "id": "13a9cff0-fe01-4de0-b762-b6e423390177",
         "category": "Wein / Sekt",
         "name": "Ricard (mit Eise -/- Wasser)",
-        "price": 3.9,
+        "price": 4.5,
         "details": "1",
         "size": "4cl"
     },
@@ -638,7 +638,7 @@
         "id": "f0972ef8-44d4-469a-a6f8-0bd68e7c7731",
         "category": "Wein / Sekt",
         "name": "Pastis 51 (mit Eis -/- Wasser)",
-        "price": 3.8,
+        "price": 4.5,
         "size": "4cl"
     },
     {
@@ -651,62 +651,71 @@
     {
         "id": "686332f0-506f-4a81-9ac8-eb44fdefae4f",
         "category": "Longdrinks / Cocktails",
-        "name": "Jack Daniel's",
-        "price": 6.2,
-        "details": "Cola oder Ginger Ale"
+        "name": "Jack Daniel's Old No. 7",
+        "price": 6.8,
+        "details": "Cola oder Ginger Ale",
+        "size": "4cl"
     },
     {
         "id": "b821ed23-5397-42af-8333-cdbc5712ada2",
         "category": "Longdrinks / Cocktails",
         "name": "Lynchburg Lemonade",
-        "price": 6.7
+        "price": 6.9,
+        "size": "4cl"
     },
     {
         "id": "74918389-123a-4661-a657-6ce9f2554894",
         "category": "Longdrinks / Cocktails",
         "name": "Jack Daniel’s Tennessee Rye",
-        "price": 6.7,
-        "details": "Ginger"
+        "price": 6.9,
+        "details": "Ginger",
+        "size": "4cl"
     },
     {
         "id": "23da1883-daac-44ec-b279-0061e30d1b49",
         "category": "Longdrinks / Cocktails",
         "name": "Jack Honey",
-        "price": 5.9,
-        "details": "Ginger oder Tonic"
+        "price": 6.4,
+        "details": "Ginger oder Tonic",
+        "size": "4cl"
     },
     {
         "id": "2acd8965-9b38-4d84-aebc-7cd950179521",
         "category": "Longdrinks / Cocktails",
         "name": "Finlandia Vodka",
-        "price": 6.0,
-        "details": "Tonic"
+        "price": 6.2,
+        "details": "Tonic",
+        "size": "4cl"
     },
     {
         "id": "52d98b1b-d2e5-43a4-b387-ddee5ba88728",
         "category": "Longdrinks / Cocktails",
         "name": "Southern Comfort",
         "price": 5.6,
-        "details": "Tonic oder Lemon"
+        "details": "Tonic oder Lemon",
+        "size": "4cl"
     },
     {
         "id": "77c64f64-520d-4387-8a57-467d8367d076",
         "category": "Longdrinks / Cocktails",
         "name": "Licor43 con leche",
-        "price": 5.2
+        "price": 5.6,
+        "size": "4cl"
     },
     {
         "id": "51a20efe-8878-4a49-a476-928c05666c74",
         "category": "Longdrinks / Cocktails",
         "name": "Captain Cola",
-        "price": 5.2,
-        "details": "Captain Morgan spiced + Cola"
+        "price": 5.6,
+        "details": "oder Captain Morgan spiced + Cola",
+        "size": "4cl"
     },
     {
         "id": "6e2d7ccd-412e-49dc-8586-e0906cbeb71c",
         "category": "Longdrinks / Cocktails",
         "name": "Bacardi Cola",
-        "price": 5.2
+        "price": 5.6,
+        "size": "4cl"
     },
     {
         "id": "1da2561e-7505-4d15-92f8-b3f373a42a17",
