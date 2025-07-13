@@ -501,7 +501,7 @@
         "id": "dbeca41d-bc2e-4cc9-ac4a-cba0f9ad0a26",
         "category": "Wein / Sekt",
         "name": "Müller-Thurgau – trocken",
-        "price": 3.4,
+        "price": 3.6,
         "details": "(Q.b.a./Baden)",
         "size": "0,2l"
     },
@@ -541,7 +541,7 @@
         "id": "bfcc54f8-20ce-4ce3-8ef8-ab52889f1502",
         "category": "Wein / Sekt",
         "name": "Französischer Landwein",
-        "price": 2.8,
+        "price": 2.9,
         "details": "(L.f., France)",
         "size": "0,2l"
     },
@@ -551,6 +551,13 @@
         "name": "Schorle weiß - vom Gutedel",
         "price": 2.9,
         "size": "0,25l"
+    },
+    {
+        "id": "811f89b9-ef1e-40a9-a127-7742ff0b91db",
+        "category": "Wein / Sekt",
+        "name": "Schorle weiß -groß- vom Gutedel",
+        "price": 5.6,
+        "size": "0,5l"
     },
     {
         "id": "bb7e542b-c502-468a-8b62-c6bb16f7f309",
