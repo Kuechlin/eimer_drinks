@@ -680,6 +680,14 @@
         "size": "4cl"
     },
     {
+        "id": "23da1884-daad-44ed-b280-0061e30d1b50",
+        "category": "Longdrinks / Cocktails",
+        "name": "Slane Irish Whisky Ginger Ale",
+        "price": 6.7,
+        "details": "1,2",
+        "size": "4cl"
+    },
+    {
         "id": "2acd8965-9b38-4d84-aebc-7cd950179521",
         "category": "Longdrinks / Cocktails",
         "name": "Finlandia Vodka",
@@ -721,85 +729,115 @@
         "id": "1da2561e-7505-4d15-92f8-b3f373a42a17",
         "category": "Longdrinks / Cocktails",
         "name": "Gin Tonic",
-        "price": 5.0,
-        "details": "Hausmarke Gin + Schweppes"
+        "price": 5.6,
+        "details": "Hausmarke Gin + Schweppes",
+        "size": "4cl"
     },
     {
         "id": "10c0738c-6645-4330-91a8-426d328472b9",
         "category": "Longdrinks / Cocktails",
         "name": "Vodka Lemon",
-        "price": 5.0,
-        "details": "oder Cola oder Orange oder Mango"
+        "price": 5.6,
+        "details": "oder Cola oder Orange oder Mango",
+        "size": "4cl"
     },
     {
         "id": "a73a3b96-029f-4526-8357-40851173dbb0",
         "category": "Longdrinks / Cocktails",
         "name": "Campari Orange",
-        "price": 5.0
+        "price": 5.6,
+        "size": "4cl"
     },
     {
         "id": "6ee556c7-8db7-42c3-b2da-2c94d2d7b9d8",
         "category": "Longdrinks / Cocktails",
         "name": "Batida Kirsch",
-        "price": 5.0,
-        "details": "oder Orange oder Maracuja"
+        "price": 5.6,
+        "details": "oder Orange oder Maracuja",
+        "size": "4cl"
+    },
+    {
+        "id": "6ee556c8-8db8-42c4-b2db-2c94d2d7b9d9",
+        "category": "Longdrinks / Cocktails",
+        "name": "Tequila Sunrise",
+        "price": 7.0,
+        "size": "4cl"
     },
     {
         "id": "b127a934-3338-4a97-9afc-860dfc01bc05",
         "category": "Longdrinks / Cocktails",
         "name": "Beton",
-        "price": 5.2,
-        "details": "Becherovka Tonic"
+        "price": 5.8,
+        "details": "Becherovka, Tonic",
+        "size": "4cl"
     },
     {
         "id": "f7a7f74c-65b6-4d0e-a8cf-e465134186b4",
         "category": "Longdrinks / Cocktails",
         "name": "Grappelsovka",
-        "price": 5.2,
-        "details": "Grasovka Vodka + Apfelsaft"
+        "price": 5.8,
+        "details": "Grasovka Vodka + Apfelsaft",
+        "size": "4cl"
+    },
+    {
+        "id": "6ee556c9-8db9-42c5-b2dc-2c94d2d7b9e0",
+        "category": "Longdrinks / Cocktails",
+        "name": "Dark'n'Stormy",
+        "price": 6.4,
+        "details": "Dunkler Rum, Ginger Beer",
+        "size": "4cl"
     },
     {
         "id": "dace685a-a78d-4004-b10e-71307da2316b",
         "category": "Longdrinks / Cocktails",
         "name": "Cuba Libre",
-        "price": 5.8
+        "price": 6.5,
+        "details": "1,5",
+        "size": "4cl"
     },
     {
         "id": "1f77a83d-f548-4daa-9bde-c5fb2af890a3",
         "category": "Longdrinks / Cocktails",
         "name": "Vodka Mate",
-        "price": 6.2
+        "price": 6.9,
+        "details": "5",
+        "size": "4cl"
     },
     {
         "id": "744ce0e4-e2cd-4bd7-911f-267274323698",
         "category": "Longdrinks / Cocktails",
-        "name": "Long Eimer Icetea (12cl)",
-        "price": 10.6,
-        "details": "!! *0,5 Liter* !!"
+        "name": "Long Eimer Icetea",
+        "price": 11.5,
+        "details": "!! *0,5 Liter* !!",
+        "size": "12cl"
     },
     {
         "id": "7ec7b5af-9484-443e-a343-a29bb9528b08",
         "category": "Longdrinks / Cocktails",
-        "name": "Asbach gedopt (2cl)",
-        "price": 2.5
+        "name": "Asbach gedopt",
+        "price": 2.5,
+        "size": "2cl"
     },
     {
         "id": "efea29ac-4709-43eb-836e-2f5fd11613cf",
         "category": "Longdrinks / Cocktails",
         "name": "White Russian",
-        "price": 6.4
+        "price": 7.0,
+        "size": "4cl"
     },
     {
         "id": "d55270bb-7ce7-4749-87a0-22aa40efb39e",
         "category": "Longdrinks / Cocktails",
         "name": "Moscow Mule",
-        "price": 7.0
+        "price": 6.4,
+        "details": "Jägermeister, Ginger Beer",
+        "size": "4cl"
     },
     {
         "id": "f767a16e-54db-4acb-9ddc-b82389323042",
         "category": "Longdrinks / Cocktails",
         "name": "Effect Energy",
-        "price": 6.9,
+        "price": 7.2,
         "details": "+4cl Vodka oder +4cl Jägermeister"
     },
     {
