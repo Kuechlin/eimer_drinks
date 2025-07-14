@@ -262,14 +262,6 @@
         "size": "0,3l"
     },
     {
-        "id": "d26fc037-2638-467b-aaab-7426b3bcd670",
-        "category": "Alkoholfreie Getränke",
-        "name": "Wostok Kräuterlimonade nicht verfügbar",
-        "price": 3.0,
-        "details": "5",
-        "size": "0,33l"
-    },
-    {
         "id": "b7a48704-6ab7-4801-aa2c-f873805900b3",
         "category": "Alkoholfreie Getränke",
         "name": "Cola, Orangenlimo, Zitronenlimo, Spezi",
@@ -295,48 +287,42 @@
         "id": "8ec95c32-6670-414d-be6a-06f236d295cb",
         "category": "Alkoholfreie Getränke",
         "name": "Apfelsaft natutrüb",
-        "price": 2.2,
-        "details": "4",
-        "size": "0,2l"
+        "details": "4"
     },
     {
         "id": "f90e483a-f7cd-409f-9f4a-95dfaa220146",
         "category": "Alkoholfreie Getränke",
         "name": "Orangensaft",
-        "price": 2.2,
-        "details": "4",
-        "size": "0,2l"
+        "details": "4"
     },
     {
         "id": "ff867d3a-b9d2-4730-97e0-2774210afc24",
         "category": "Alkoholfreie Getränke",
         "name": "Kirschsaft",
-        "price": 2.2,
-        "details": "4",
-        "size": "0,2l"
+        "details": "4"
     },
     {
         "id": "14e446b4-fac7-4948-a0a0-294fe719137e",
         "category": "Alkoholfreie Getränke",
-        "name": "Johannisbeersaft",
-        "price": 2.2,
-        "size": "0,2l"
+        "name": "Johannisbeersaft"
     },
     {
         "id": "baa6de41-d1b9-4910-8824-774461e1774c",
         "category": "Alkoholfreie Getränke",
         "name": "Maracuja-Nektar",
-        "price": 2.2,
-        "details": "4",
-        "size": "0,2l"
+        "details": "4"
     },
     {
         "id": "d503ed98-7408-45f2-9ef6-f97414e9fe8f",
         "category": "Alkoholfreie Getränke",
-        "name": "Bananen-Nektar o. Mango-Nektar",
-        "price": 2.2,
-        "details": "4",
-        "size": "0,2l"
+        "name": "Bananen-Nektar",
+        "details": "4"
+    },
+    {
+        "id": "d503ed99-7409-45f3-9ef7-f97414e9fe8g",
+        "category": "Alkoholfreie Getränke",
+        "name": "Mango-Nektar",
+        "details": "4"
     },
     {
         "id": "1a64eb6b-a5e0-464d-993d-f73c821f3868",
@@ -653,7 +639,7 @@
         "category": "Longdrinks / Cocktails",
         "name": "Jack Daniel's Old No. 7",
         "price": 6.8,
-        "details": "Cola oder Ginger Ale",
+        "details": "Cola oder Ginger Ale (1,5/1,2,6)",
         "size": "4cl"
     },
     {
@@ -668,7 +654,7 @@
         "category": "Longdrinks / Cocktails",
         "name": "Jack Daniel’s Tennessee Rye",
         "price": 6.9,
-        "details": "Ginger",
+        "details": "Ginger (1,2)",
         "size": "4cl"
     },
     {
@@ -676,7 +662,7 @@
         "category": "Longdrinks / Cocktails",
         "name": "Jack Honey",
         "price": 6.4,
-        "details": "Ginger oder Tonic",
+        "details": "Ginger oder Tonic (1,2,6)",
         "size": "4cl"
     },
     {
@@ -692,7 +678,7 @@
         "category": "Longdrinks / Cocktails",
         "name": "Finlandia Vodka",
         "price": 6.2,
-        "details": "Tonic",
+        "details": "Tonic (1,2,6)",
         "size": "4cl"
     },
     {
@@ -700,7 +686,7 @@
         "category": "Longdrinks / Cocktails",
         "name": "Southern Comfort",
         "price": 5.6,
-        "details": "Tonic oder Lemon",
+        "details": "Tonic oder Lemon (1,2,6)",
         "size": "4cl"
     },
     {
@@ -715,7 +701,7 @@
         "category": "Longdrinks / Cocktails",
         "name": "Captain Cola",
         "price": 5.6,
-        "details": "oder Captain Morgan spiced + Cola",
+        "details": "oder Captain Morgan spiced + Cola (1,5)",
         "size": "4cl"
     },
     {
@@ -723,6 +709,7 @@
         "category": "Longdrinks / Cocktails",
         "name": "Bacardi Cola",
         "price": 5.6,
+        "details": "1,5",
         "size": "4cl"
     },
     {
@@ -730,7 +717,7 @@
         "category": "Longdrinks / Cocktails",
         "name": "Gin Tonic",
         "price": 5.6,
-        "details": "Hausmarke Gin + Schweppes",
+        "details": "Hausmarke Gin + Schweppes (1,2,6)",
         "size": "4cl"
     },
     {
@@ -738,7 +725,7 @@
         "category": "Longdrinks / Cocktails",
         "name": "Vodka Lemon",
         "price": 5.6,
-        "details": "oder Cola oder Orange oder Mango",
+        "details": "oder Cola oder Orange oder Mango (1,2,5,6)",
         "size": "4cl"
     },
     {
@@ -746,6 +733,7 @@
         "category": "Longdrinks / Cocktails",
         "name": "Campari Orange",
         "price": 5.6,
+        "details": "1"
         "size": "4cl"
     },
     {
@@ -808,7 +796,7 @@
         "category": "Longdrinks / Cocktails",
         "name": "Long Eimer Icetea",
         "price": 11.5,
-        "details": "!! *0,5 Liter* !!",
+        "details": "!! *0,5 Liter* !! (1,5)",
         "size": "12cl"
     },
     {
@@ -838,27 +826,27 @@
         "category": "Longdrinks / Cocktails",
         "name": "Effect Energy",
         "price": 7.2,
-        "details": "+4cl Vodka oder +4cl Jägermeister"
+        "details": "+4cl Vodka oder +4cl Jägermeister (5)"
     },
     {
         "id": "1169773a-5b72-40d8-9ad8-2b0745f9ad4f",
         "category": "Shots / Brands / Aperitifs",
         "name": "Jack Daniel's Old No.7",
-        "price": 3.0,
+        "price": 3.5,
         "size": "2cl"
     },
     {
         "id": "f27edb7e-400e-401c-a9c0-cb327f3eb4a9",
         "category": "Shots / Brands / Aperitifs",
-        "name": "Jack Tennessee Fire oder Jack Honey",
-        "price": 2.6,
+        "name": "Jack Tennessee Fire,Apple oder Honey",
+        "price": 3.0,
         "size": "2cl"
     },
     {
         "id": "cdc705c6-4fcf-41b8-88fd-ca836ae9a14e",
         "category": "Shots / Brands / Aperitifs",
         "name": "Jack Daniel’s Single Barrel oder Single Barrel Rye",
-        "price": 3.6,
+        "price": 3.8,
         "size": "2cl"
     },
     {
@@ -876,6 +864,13 @@
         "size": "2cl"
     },
     {
+        "id": "795b6b51-cea1-424g-b01g-5e2eb8521f90",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Slane Irish Whiskey",
+        "price": 3.2,
+        "size": "2cl"
+    },
+    {
         "id": "567b308a-2ec0-4968-a5ab-2881adefdd6d",
         "category": "Shots / Brands / Aperitifs",
         "name": "Mexikaner",
@@ -886,14 +881,14 @@
         "id": "1f3b24b4-8840-4577-a81f-da2b3dfda474",
         "category": "Shots / Brands / Aperitifs",
         "name": "Joster",
-        "price": 1.2,
+        "price": 1.4,
         "size": "2cl"
     },
     {
         "id": "93fb4694-7ef2-487d-b651-dd0e915a6848",
         "category": "Shots / Brands / Aperitifs",
         "name": "Pfeffi",
-        "price": 1.2,
+        "price": 1.4,
         "details": "Pfefferminz-Likör",
         "size": "2cl"
     },
@@ -935,17 +930,16 @@
     {
         "id": "ee068dd4-d55c-44d1-b917-1e4c9c5ead55",
         "category": "Shots / Brands / Aperitifs",
-        "name": "HM Tequila Gold o. Silver",
-        "price": 2.0,
-        "details": "mit Zitrone/ Orange +10ct",
+        "name": "Hausmarke Tequila",
+        "price": 2.2,
+        "details": "Gold o. Silver",
         "size": "2cl"
     },
     {
         "id": "5f299726-c578-40a4-a1b2-8dfd6c0b9996",
         "category": "Shots / Brands / Aperitifs",
-        "name": "Mezcal",
-        "price": 2.8,
-        "details": "wer bekommt den Wurm?",
+        "name": "Helbing Feiner Kümmel",
+        "price": 2.0,
         "size": "2cl"
     },
     {
@@ -959,7 +953,7 @@
         "id": "4b7bd30d-c685-47c6-88f4-2acfda9884c3",
         "category": "Shots / Brands / Aperitifs",
         "name": "Agwa de Bolivia",
-        "price": 2.7,
+        "price": 2.9,
         "details": "Coca leaf Liqueur",
         "size": "2cl"
     },
@@ -998,14 +992,14 @@
         "id": "49f570bf-661f-4a2b-a1db-ad7a2f2c082b",
         "category": "Shots / Brands / Aperitifs",
         "name": "Bailey's Irish cream",
-        "price": 3.8,
+        "price": 3.9,
         "size": "4cl"
     },
     {
         "id": "866cd457-4097-4648-b7b9-1421a364e06f",
         "category": "Shots / Brands / Aperitifs",
         "name": "Little Lebowski",
-        "price": 2.5,
+        "price": 3.2,
         "details": "Vodka + Kaffelikör, Baileys",
         "size": "2cl"
     },
@@ -1013,7 +1007,7 @@
         "id": "fb2eed3f-e473-4d13-890f-98116b2a1420",
         "category": "Shots / Brands / Aperitifs",
         "name": "Rache der Sith",
-        "price": 2.5,
+        "price": 3.2,
         "details": "Kaffeelikör, Pfefferminzlikör, Chilischnaps",
         "size": "2cl"
     },
