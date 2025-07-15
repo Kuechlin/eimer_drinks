@@ -1,0 +1,262 @@
+/* src/components/DrinkSelector.module.css */
+.componentBox {
+  /* ... other styles (border, padding, background) ... */
+  border: 1px solid var(--color-border, #ccc);
+  border-radius: 5px;
+  padding: 15px;
+  background-color: var(--color-surface-alt, #f9f9f9);
+  /* Ensure it's a flex container that allows children to grow */
+  display: flex;
+  flex-direction: column;
+  /* Let the component box itself grow if its parent allows */
+  /* This is important if DrinkSelector is inside another flex container */
+  flex-grow: 1; /* Allow this component to grow */
+  overflow: hidden; /* Prevent content from spilling out if calculation is tricky */
+}
+
+.componentBox h2 {
+  /* ... existing styles ... */
+  margin-top: 0;
+  color: var(--color-secondary, #2b2a29);
+  border-bottom: 1px solid var(--color-border-light, #eee);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  flex-shrink: 0; /* Prevent header from shrinking */
+}
+
+/* Filters Section Styles */
+.filters {
+  /* ... existing styles ... */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--color-border-light, #eee);
+  flex-shrink: 0; /* Prevent filters from shrinking */
+}
+
+.filterItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.filterItem label {
+  font-size: 0.85em;
+  color: var(--color-text-muted, #555);
+  font-weight: bold;
+}
+
+/* Style for both select and text input */
+.filters select,
+.filters input[type="text"] {
+  padding: 10px 12px;
+  border: 1px solid var(--color-border, #ccc);
+  border-radius: 4px;
+  font-size: 1em;
+  background-color: var(--input-background, #fff); /* Use variable */
+  color: var(--color-text); /* Use variable */
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Add placeholder styling */
+.filters input[type="text"]::placeholder {
+  color: var(--color-text-muted);
+  opacity: 0.7;
+}
+
+.filters select:focus,
+.filters input[type="text"]:focus {
+  outline: none;
+  border-color: var(--color-primary, #ef7f1a);
+  box-shadow: 0 0 0 2px rgba(239, 127, 26, 0.2); /* Use fixed color or create variable */
+}
+
+/* Style overrides for select dropdown */
+.filters select {
+  appearance: none; /* Remove default arrow */
+  /* Corrected background-image with hardcoded grey color and double quotes */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23888888%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px auto;
+  padding-right: 30px; /* Keep space for arrow */
+  /* Other select styles like padding, border, font-size, etc. remain */
+}
+
+/* Wrapper for search input and clear button */
+.searchInputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchInputWrapper input[type="text"] {
+  padding-right: 30px;
+  width: 100%;
+}
+
+/* Clear Search Button Styles */
+.clearSearchButton {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ccc; /* Keep neutral or use a variable */
+  color: var(--color-text-inverted, #fff);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.clearSearchButton:hover {
+  background-color: #aaa; /* Keep neutral or use a variable */
+}
+
+/* Drink List styles */
+.drinkList {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  /* --- CHANGES START --- */
+  /* Remove fixed max-height */
+  /* max-height: 300px; */
+
+  /* Allow the list to grow and fill available space */
+  flex-grow: 1;
+
+  /* Keep overflow for when content exceeds the calculated space */
+  overflow-y: auto;
+
+  /* Add min-height: 0 as a flexbox trick if scrolling doesn't work right */
+  min-height: 0;
+  /* --- CHANGES END --- */
+
+  border: 1px solid var(--color-border-light, #eee);
+  border-radius: 3px;
+  background-color: var(--color-surface, #fff);
+}
+
+/* Styles for .drinkItem and its children remain the same */
+.drinkItem {
+  /* ... existing styles ... */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--color-border-light, #eee);
+  transition: background-color 0.3s ease-out;
+}
+.drinkItem:last-child {
+  border-bottom: none;
+}
+.drinkItem:hover {
+  background-color: var(--hover-background); /* Use variable */
+}
+
+.drinkInfo {
+  flex-grow: 1;
+  margin-right: 10px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.drinkName {
+  font-weight: bold;
+  color: var(--color-text); /* Use variable */
+}
+.drinkSize {
+  font-style: italic;
+  color: var(--color-text-muted);
+  font-size: 0.9em;
+  margin-left: 4px;
+}
+.drinkPrice {
+  color: var(--color-success-dark); /* Use variable */
+  font-weight: bold;
+  margin-left: 4px;
+}
+.drinkDetails {
+  color: var(--color-text-muted); /* Use variable */
+  font-size: 0.85em;
+  display: block;
+  margin-top: 2px;
+}
+
+/* Add Drink Button Styles */
+.addDrinkButton {
+  padding: 5px 10px;
+  background-color: var(--color-success);
+  color: var(--color-text-inverted); /* Ensure contrast */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  line-height: 1;
+  font-weight: bold;
+  min-width: 30px;
+  text-align: center;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  flex-shrink: 0;
+}
+.addDrinkButton:hover {
+  background-color: var(--color-success-dark);
+  transform: scale(1.05);
+}
+.addDrinkButton:disabled {
+  background-color: #a5d6a7; /* Keep specific light green or derive from var */
+  color: var(--color-text-muted);
+  cursor: default;
+  transform: none;
+  font-size: 1.1em;
+}
+
+/* Feedback Styles */
+@keyframes fadeBackground {
+  from {
+    background-color: #c8e6c9;
+  } /* Keep specific light green */
+  to {
+    background-color: transparent;
+  }
+}
+
+.addedFeedback {
+  /* Feedback class */
+  animation: fadeBackground 1s ease-out;
+}
+
+/* --- Desktop Adjustments --- */
+@media (min-width: 768px) {
+  .filters {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .filterItem {
+    flex-grow: 1;
+  }
+
+  .filterItem.searchFilter {
+    /* Target specific class name from TSX */
+    flex-grow: 2;
+  }
+
+  .filters select,
+  .filters input[type="text"] {
+    width: auto;
+  }
+}
