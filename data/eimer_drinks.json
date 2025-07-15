@@ -873,7 +873,7 @@
     {
         "id": "567b308a-2ec0-4968-a5ab-2881adefdd6d",
         "category": "Shots / Brands / Aperitifs",
-        "name": "Mexikaner",
+        "name": "Mexikaner (Hausgemacht)",
         "price": 1.7,
         "size": "2cl"
     },
@@ -1013,66 +1013,9 @@
     },
     {
         "id": "7ae90e8b-1168-4b32-bf99-f6bc7f42d2bc",
-        "category": "Absinthe",
-        "name": "Lasala",
+        "category": "Shots / Brands / Aperitifs",
+        "name": "Berliner Luft",
         "size": "2cl",
-        "details": "Spanien, 50%, 4mg Thujon",
-        "price": 3.8
-    },
-    {
-        "id": "5a11e3c3-33f3-445c-9b23-f0db74f69bc0",
-        "category": "Absinthe",
-        "name": "Lasala",
-        "size": "4cl",
-        "details": "Spanien, 50%, 4mg Thujon",
-        "price": 6.2
-    },
-    {
-        "id": "f08787d4-16e0-4035-b84a-3afd38704199",
-        "category": "Absinthe",
-        "name": "Pigalle",
-        "size": "2cl",
-        "details": "Schweiz, 70%, Thujon k.A.",
-        "price": 3.9
-    },
-    {
-        "id": "35340b38-3d5b-4b34-97f1-059abd0c10ff",
-        "category": "Absinthe",
-        "name": "Pigalle",
-        "size": "4cl",
-        "details": "Schweiz, 70%, Thujon k.A.",
-        "price": 6.4
-    },
-    {
-        "id": "f97995bc-02f9-473d-a449-468ce78dc231",
-        "category": "Absinthe",
-        "name": "Mata Hari",
-        "size": "2cl",
-        "details": "Österreich, 60%, 35 mg Thujon",
-        "price": 4.2
-    },
-    {
-        "id": "5bdb9be4-48ba-45c4-a069-dab06a9283ed",
-        "category": "Absinthe",
-        "name": "Mata Hari",
-        "size": "4cl",
-        "details": "Österreich, 60%, 35 mg Thujon",
-        "price": 6.9
-    },
-    {
-        "id": "7f35c50c-7c79-4c3f-a5b5-4c143e5b6fea",
-        "category": "Absinthe",
-        "name": "Mansinth",
-        "size": "2cl",
-        "details": "Schweiz, 66%, Thujon k.A.",
-        "price": 4.4
-    },
-    {
-        "id": "32dc7a9c-deab-46c8-ad2e-dcd58ff29dbd",
-        "category": "Absinthe",
-        "name": "Mansinth",
-        "size": "4cl",
-        "details": "Schweiz, 66%, Thujon k.A.",
-        "price": 6.9
+        "price": 1.9
     }
 ]
