@@ -20,7 +20,7 @@ const DrinkSelector: React.FC<DrinkSelectorProps> = ({
   // State for feedback
   const [justAddedId, setJustAddedId] = useState<string | null>(null);
   const [feedbackTimeoutId, setFeedbackTimeoutId] = useState<number | null>(
-    null
+    null,
   );
 
   // Group drinks by category - This will now include "Custom Items" automatically
@@ -47,7 +47,7 @@ const DrinkSelector: React.FC<DrinkSelectorProps> = ({
             (drink.details &&
               drink.details.toLowerCase().includes(searchTerm.toLowerCase())) ||
             // Include category in search as well
-            drink.category.toLowerCase().includes(searchTerm.toLowerCase()))
+            drink.category.toLowerCase().includes(searchTerm.toLowerCase())),
       )
       .sort((a, b) => a.name.localeCompare(b.name)); // Sort results alphabetically
   }, [drinks, selectedCategory, searchTerm]);
@@ -143,7 +143,11 @@ const DrinkSelector: React.FC<DrinkSelectorProps> = ({
                 )}
                 <span className={styles.drinkPrice}>
                   {" "}
-                  - {typeof drink.price === 'number' ? drink.price.toFixed(2) : "0.00"}€
+                  -{" "}
+                  {typeof drink.price === "number"
+                    ? drink.price.toFixed(2)
+                    : "0.00"}
+                  €
                 </span>
                 {/* Display category if it's custom */}
                 {drink.isCustom && (

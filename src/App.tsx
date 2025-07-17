@@ -22,7 +22,7 @@ type Theme = "light" | "dark";
 
 // Function to ensure drinks from JSON have IDs (run once on initial load)
 const processInitialDrinks = (
-  drinks: Omit<Drink, "id" | "isCustom">[]
+  drinks: Omit<Drink, "id" | "isCustom">[],
 ): Drink[] => {
   return drinks.map((drink) => ({
     ...drink,
@@ -67,12 +67,12 @@ function App() {
       } catch (error) {
         console.error(
           "Failed to parse people list while checking selected ID",
-          error
+          error,
         );
       }
       localStorage.removeItem(SELECTED_PERSON_STORAGE_KEY);
       return null;
-    }
+    },
   );
 
   const [theme, setTheme] = useState<Theme>(() => {
@@ -85,7 +85,7 @@ function App() {
   // --- Drinks State ---
   // Load initial standard drinks and assign IDs (runs only once)
   const [standardDrinks] = useState<Drink[]>(() =>
-    processInitialDrinks(initialDrinksData as Omit<Drink, "id" | "isCustom">[])
+    processInitialDrinks(initialDrinksData as Omit<Drink, "id" | "isCustom">[]),
   );
 
   // Custom Drinks State with localStorage
@@ -146,7 +146,7 @@ function App() {
   useEffect(() => {
     localStorage.setItem(
       CUSTOM_DRINKS_STORAGE_KEY,
-      JSON.stringify(customDrinks)
+      JSON.stringify(customDrinks),
     );
   }, [customDrinks]);
 
@@ -191,14 +191,14 @@ function App() {
 
   const removeOrder = (orderId: string) => {
     setOrders((prevOrders) =>
-      prevOrders.filter((order) => order.id !== orderId)
+      prevOrders.filter((order) => order.id !== orderId),
     );
   };
 
   const handleResetData = () => {
     if (
       window.confirm(
-        "Are you sure you want to clear all friends, orders, AND custom menu items? This cannot be undone."
+        "Are you sure you want to clear all friends, orders, AND custom menu items? This cannot be undone.",
       )
     ) {
       setPeople([]);
@@ -235,7 +235,7 @@ function App() {
     // Prevent adding duplicates (check both standard and custom)
     if (
       allDrinks.some(
-        (d) => d.name.toLowerCase() === name.toLowerCase() && d.size === size
+        (d) => d.name.toLowerCase() === name.toLowerCase() && d.size === size,
       )
     ) {
       alert(`"${name}"${size ? ` (${size})` : ""} already exists in the menu.`);
@@ -260,7 +260,7 @@ function App() {
 
     if (
       window.confirm(
-        `Are you sure you want to delete the custom item "${drinkToRemove.name}"?`
+        `Are you sure you want to delete the custom item "${drinkToRemove.name}"?`,
       )
     ) {
       setCustomDrinks((prev) => prev.filter((drink) => drink.id !== drinkId));

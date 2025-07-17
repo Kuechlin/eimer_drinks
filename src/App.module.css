@@ -79,7 +79,9 @@
   align-items: center;
   justify-content: center;
   line-height: 1; /* Reset line height for flex centering */
-  transition: background-color 0.2s ease, transform 0.1s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
 }
 .resetButton:hover {
   background-color: var(--color-danger-dark);
@@ -105,7 +107,9 @@
   text-align: center;
   cursor: pointer;
   padding: 0;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .themeToggleButton:hover {
@@ -133,7 +137,9 @@
   font-size: 0.95em;
   color: var(--color-text-muted);
   border-bottom: 3px solid transparent;
-  transition: background-color 0.2s ease, border-color 0.2s ease,
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
     color 0.2s ease;
   text-align: center;
   white-space: nowrap;

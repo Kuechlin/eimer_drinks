@@ -47,7 +47,7 @@ const Summary: React.FC<SummaryProps> = ({ orders, people }) => {
           order.drinkSize || "N/A"
         }-${order.price}`;
         const existingDrink = personSummary.drinks.find(
-          (d) => `${d.name}-${d.size || "N/A"}-${d.price}` === drinkIdentifier
+          (d) => `${d.name}-${d.size || "N/A"}-${d.price}` === drinkIdentifier,
         );
 
         if (existingDrink) {
@@ -65,7 +65,11 @@ const Summary: React.FC<SummaryProps> = ({ orders, people }) => {
 
     // Berechnung des Grand Totals mit Filtern ungültiger Werte
     const grandTotal = orders
-      .map(order => (typeof order.price === 'number' && !isNaN(order.price) ? order.price : 0))
+      .map((order) =>
+        typeof order.price === "number" && !isNaN(order.price)
+          ? order.price
+          : 0,
+      )
       .reduce((sum, price) => sum + price, 0);
 
     Object.values(personSummaries).forEach((summary) => {
@@ -122,7 +126,8 @@ const Summary: React.FC<SummaryProps> = ({ orders, people }) => {
           <p className={styles.grandTotal}>
             <strong>
               Grand Total:{" "}
-              {typeof summaryData.grandTotal === "number" && !isNaN(summaryData.grandTotal)
+              {typeof summaryData.grandTotal === "number" &&
+              !isNaN(summaryData.grandTotal)
                 ? summaryData.grandTotal.toFixed(2)
                 : "0.00"}{" "}
               €

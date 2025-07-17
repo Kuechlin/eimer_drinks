@@ -35,7 +35,9 @@
   font-size: 1em;
   background-color: var(--input-background, #fff); /* Use variable */
   color: var(--color-text); /* Use variable */
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .addPersonForm input::placeholder {
@@ -62,7 +64,9 @@
   font-weight: bold; /* Make Add bolder */
   flex-shrink: 0;
   white-space: nowrap;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 }
 .addPersonForm button:hover {
   background-color: var(--color-primary-dark); /* Use variable */

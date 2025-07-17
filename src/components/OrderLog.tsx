@@ -38,7 +38,14 @@ const OrderLog: React.FC<OrderLogProps> = ({
                 <strong>{getPersonName(order.personId)}</strong> ordered{" "}
                 {order.drinkName}
                 {order.drinkSize && ` (${order.drinkSize})`}
-                <span> - {typeof order.price === 'number' ? order.price.toFixed(2) : "0.00"}€</span>
+                <span>
+                  {" "}
+                  -{" "}
+                  {typeof order.price === "number"
+                    ? order.price.toFixed(2)
+                    : "0.00"}
+                  €
+                </span>
               </span>
               <button
                 onClick={() => onRemoveOrder(order.id)}

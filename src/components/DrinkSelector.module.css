@@ -60,7 +60,9 @@
   color: var(--color-text); /* Use variable */
   width: 100%;
   box-sizing: border-box;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 /* Add placeholder styling */
@@ -209,7 +211,9 @@
   font-weight: bold;
   min-width: 30px;
   text-align: center;
-  transition: background-color 0.2s ease, transform 0.1s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
   flex-shrink: 0;
 }
 .addDrinkButton:hover {
