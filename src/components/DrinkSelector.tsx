@@ -143,7 +143,7 @@ const DrinkSelector: React.FC<DrinkSelectorProps> = ({
                 )}
                 <span className={styles.drinkPrice}>
                   {" "}
-                  - {drink.price.toFixed(2)}€
+                  - {typeof drink.price === 'number' ? drink.price.toFixed(2) : "0.00"}€
                 </span>
                 {/* Display category if it's custom */}
                 {drink.isCustom && (

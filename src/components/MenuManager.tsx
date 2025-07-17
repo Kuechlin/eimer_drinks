@@ -115,7 +115,7 @@ const MenuManager: React.FC<MenuManagerProps> = ({
                     {drink.size && ` (${drink.size})`}
                     <span className={styles.price}>
                       {" "}
-                      - {drink.price.toFixed(2)}€
+                      - {typeof drink.price === 'number' && !isNaN(drink.price) ? drink.price.toFixed(2) : "0.00"}€
                     </span>
                   </span>
                   {/* Only show delete button for custom items */}

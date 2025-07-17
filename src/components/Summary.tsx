@@ -63,7 +63,10 @@ const Summary: React.FC<SummaryProps> = ({ orders, people }) => {
       }
     });
 
-    const grandTotal = orders.reduce((sum, order) => sum + order.price, 0);
+    // Berechnung des Grand Totals mit Filtern ungültiger Werte
+    const grandTotal = orders
+      .map(order => (typeof order.price === 'number' && !isNaN(order.price) ? order.price : 0))
+      .reduce((sum, price) => sum + price, 0);
 
     Object.values(personSummaries).forEach((summary) => {
       summary.drinks.sort((a, b) => a.name.localeCompare(b.name));
@@ -81,24 +84,29 @@ const Summary: React.FC<SummaryProps> = ({ orders, people }) => {
       )}
 
       {summaryData.personSummaries.map((summary) => (
-        // Use person's unique ID for the key
         <div key={summary.id} className={styles.personSummary}>
           <h3 className={styles.personHeader}>
-            {" "}
-            {/* Added style class */}
             {summary.name}: {summary.totalCount} drink(s) -{" "}
-            {summary.totalCost.toFixed(2)}€
+            {typeof summary.totalCost === "number" && !isNaN(summary.totalCost)
+              ? summary.totalCost.toFixed(2)
+              : "0.00"}{" "}
+            €
           </h3>
           {summary.drinks.length > 0 ? (
             <ul className={styles.summaryDrinkList}>
               {summary.drinks.map((drink, index) => (
                 <li key={index}>
-                  {/* Wrap count in span for styling */}
                   {drink.count > 1 && <span>{drink.count}x </span>}
                   {drink.name}
                   {drink.size && ` (${drink.size})`}
-                  {/* Wrap price in span for styling */}
-                  <span> - {drink.price.toFixed(2)}€ each</span>
+                  <span>
+                    {" "}
+                    -{" "}
+                    {typeof drink.price === "number" && !isNaN(drink.price)
+                      ? drink.price.toFixed(2)
+                      : "0.00"}{" "}
+                    € each
+                  </span>
                 </li>
               ))}
             </ul>
@@ -110,11 +118,15 @@ const Summary: React.FC<SummaryProps> = ({ orders, people }) => {
 
       {people.length > 0 && (
         <>
-          {/* Apply style class to hr */}
           <hr className={styles.divider} />
-          {/* Apply style class to paragraph */}
           <p className={styles.grandTotal}>
-            <strong>Grand Total: {summaryData.grandTotal.toFixed(2)}€</strong>
+            <strong>
+              Grand Total:{" "}
+              {typeof summaryData.grandTotal === "number" && !isNaN(summaryData.grandTotal)
+                ? summaryData.grandTotal.toFixed(2)
+                : "0.00"}{" "}
+              €
+            </strong>
           </p>
         </>
       )}
