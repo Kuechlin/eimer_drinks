@@ -1,16 +1,12 @@
 // src/components/MenuManager.tsx
-import React, { useState, useMemo } from "react";
-import { Drink } from "../types";
-import styles from "./MenuManager.module.css"; // We'll create this CSS Module
+import React, { useState, useMemo } from 'react'
+import { Drink } from '../types'
+import styles from './MenuManager.module.css' // We'll create this CSS Module
 
 interface MenuManagerProps {
-  allDrinks: Drink[];
-  onAddCustomDrink: (drinkData: {
-    name: string;
-    price: string;
-    size?: string;
-  }) => void;
-  onRemoveCustomDrink: (drinkId: string) => void;
+  allDrinks: Drink[]
+  onAddCustomDrink: (drinkData: { name: string; price: string; size?: string }) => void
+  onRemoveCustomDrink: (drinkId: string) => void
 }
 
 const MenuManager: React.FC<MenuManagerProps> = ({
@@ -18,42 +14,42 @@ const MenuManager: React.FC<MenuManagerProps> = ({
   onAddCustomDrink,
   onRemoveCustomDrink,
 }) => {
-  const [newItemName, setNewItemName] = useState("");
-  const [newItemPrice, setNewItemPrice] = useState("");
-  const [newItemSize, setNewItemSize] = useState("");
+  const [newItemName, setNewItemName] = useState('')
+  const [newItemPrice, setNewItemPrice] = useState('')
+  const [newItemSize, setNewItemSize] = useState('')
 
   const handleAddSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+    e.preventDefault()
     onAddCustomDrink({
       name: newItemName,
       price: newItemPrice,
       size: newItemSize,
-    });
+    })
     // Reset form
-    setNewItemName("");
-    setNewItemPrice("");
-    setNewItemSize("");
-  };
+    setNewItemName('')
+    setNewItemPrice('')
+    setNewItemSize('')
+  }
 
   // Group drinks by category for display
   const drinksByCategory = useMemo(() => {
-    const grouped: { [category: string]: Drink[] } = {};
+    const grouped: { [category: string]: Drink[] } = {}
     allDrinks.forEach((drink) => {
       if (!grouped[drink.category]) {
-        grouped[drink.category] = [];
+        grouped[drink.category] = []
       }
-      grouped[drink.category].push(drink);
+      grouped[drink.category].push(drink)
       // Sort within category
-      grouped[drink.category].sort((a, b) => a.name.localeCompare(b.name));
-    });
+      grouped[drink.category].sort((a, b) => a.name.localeCompare(b.name))
+    })
     // Sort categories, maybe put "Custom Items" last
     const sortedCategories = Object.keys(grouped).sort((a, b) => {
-      if (a === "Custom Items") return -1;
-      if (b === "Custom Items") return 1;
-      return a.localeCompare(b);
-    });
-    return { grouped, sortedCategories };
-  }, [allDrinks]);
+      if (a === 'Custom Items') return -1
+      if (b === 'Custom Items') return 1
+      return a.localeCompare(b)
+    })
+    return { grouped, sortedCategories }
+  }, [allDrinks])
 
   return (
     <div className={styles.menuManagerContainer}>
@@ -114,11 +110,11 @@ const MenuManager: React.FC<MenuManagerProps> = ({
                     {drink.name}
                     {drink.size && ` (${drink.size})`}
                     <span className={styles.price}>
-                      {" "}
-                      -{" "}
-                      {typeof drink.price === "number" && !isNaN(drink.price)
+                      {' '}
+                      -{' '}
+                      {typeof drink.price === 'number' && !isNaN(drink.price)
                         ? drink.price.toFixed(2)
-                        : "0.00"}
+                        : '0.00'}
                       €
                     </span>
                   </span>
@@ -138,12 +134,10 @@ const MenuManager: React.FC<MenuManagerProps> = ({
             </ul>
           </div>
         ))}
-        {drinksByCategory.sortedCategories.length === 0 && (
-          <p>Menu is empty.</p>
-        )}
+        {drinksByCategory.sortedCategories.length === 0 && <p>Menu is empty.</p>}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MenuManager;
+export default MenuManager

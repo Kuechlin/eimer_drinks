@@ -1,26 +1,22 @@
 // src/components/OrderLog.tsx
-import React from "react";
-import { Order, Person } from "../types";
-import styles from "./OrderLog.module.css"; // Import the CSS module
+import React from 'react'
+import { Order, Person } from '../types'
+import styles from './OrderLog.module.css' // Import the CSS module
 
 interface OrderLogProps {
-  orders: Order[];
-  people: Person[];
-  onRemoveOrder: (orderId: string) => void;
+  orders: Order[]
+  people: Person[]
+  onRemoveOrder: (orderId: string) => void
 }
 
-const OrderLog: React.FC<OrderLogProps> = ({
-  orders,
-  people,
-  onRemoveOrder,
-}) => {
+const OrderLog: React.FC<OrderLogProps> = ({ orders, people, onRemoveOrder }) => {
   const getPersonName = (personId: string): string => {
-    const person = people.find((p) => p.id === personId);
-    return person ? person.name : "Unknown";
-  };
+    const person = people.find((p) => p.id === personId)
+    return person ? person.name : 'Unknown'
+  }
 
   // Show recent orders first
-  const sortedOrders = [...orders].sort((a, b) => b.timestamp - a.timestamp);
+  const sortedOrders = [...orders].sort((a, b) => b.timestamp - a.timestamp)
 
   return (
     // Use styles object for class names
@@ -35,17 +31,9 @@ const OrderLog: React.FC<OrderLogProps> = ({
           {sortedOrders.map((order) => (
             <li key={order.id} className={styles.orderItem}>
               <span>
-                <strong>{getPersonName(order.personId)}</strong> ordered{" "}
-                {order.drinkName}
+                <strong>{getPersonName(order.personId)}</strong> ordered {order.drinkName}
                 {order.drinkSize && ` (${order.drinkSize})`}
-                <span>
-                  {" "}
-                  -{" "}
-                  {typeof order.price === "number"
-                    ? order.price.toFixed(2)
-                    : "0.00"}
-                  €
-                </span>
+                <span> - {typeof order.price === 'number' ? order.price.toFixed(2) : '0.00'}€</span>
               </span>
               <button
                 onClick={() => onRemoveOrder(order.id)}
@@ -59,7 +47,7 @@ const OrderLog: React.FC<OrderLogProps> = ({
         </ul>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default OrderLog;
+export default OrderLog

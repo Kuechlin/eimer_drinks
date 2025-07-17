@@ -1,32 +1,32 @@
 // src/components/Summary.tsx
-import React, { useMemo } from "react";
-import { Order, Person } from "../types";
-import styles from "./Summary.module.css"; // Import the CSS module
+import React, { useMemo } from 'react'
+import { Order, Person } from '../types'
+import styles from './Summary.module.css' // Import the CSS module
 
 interface SummaryProps {
-  orders: Order[];
-  people: Person[];
+  orders: Order[]
+  people: Person[]
 }
 
 // Interfaces defined within the component or imported if used elsewhere
 interface DrinkSummary {
-  name: string;
-  size?: string;
-  price: number;
-  count: number;
+  name: string
+  size?: string
+  price: number
+  count: number
 }
 
 interface PersonSummary {
-  id: string; // Added ID for key prop
-  name: string;
-  totalCost: number;
-  totalCount: number;
-  drinks: DrinkSummary[];
+  id: string // Added ID for key prop
+  name: string
+  totalCost: number
+  totalCount: number
+  drinks: DrinkSummary[]
 }
 
 const Summary: React.FC<SummaryProps> = ({ orders, people }) => {
   const summaryData = useMemo(() => {
-    const personSummaries: { [key: string]: PersonSummary } = {};
+    const personSummaries: { [key: string]: PersonSummary } = {}
     people.forEach((person) => {
       personSummaries[person.id] = {
         id: person.id, // Store ID
@@ -34,50 +34,44 @@ const Summary: React.FC<SummaryProps> = ({ orders, people }) => {
         totalCost: 0,
         totalCount: 0,
         drinks: [],
-      };
-    });
+      }
+    })
 
     orders.forEach((order) => {
       if (personSummaries[order.personId]) {
-        const personSummary = personSummaries[order.personId];
-        personSummary.totalCost += order.price;
-        personSummary.totalCount += 1;
+        const personSummary = personSummaries[order.personId]
+        personSummary.totalCost += order.price
+        personSummary.totalCount += 1
 
-        const drinkIdentifier = `${order.drinkName}-${
-          order.drinkSize || "N/A"
-        }-${order.price}`;
+        const drinkIdentifier = `${order.drinkName}-${order.drinkSize || 'N/A'}-${order.price}`
         const existingDrink = personSummary.drinks.find(
-          (d) => `${d.name}-${d.size || "N/A"}-${d.price}` === drinkIdentifier,
-        );
+          (d) => `${d.name}-${d.size || 'N/A'}-${d.price}` === drinkIdentifier,
+        )
 
         if (existingDrink) {
-          existingDrink.count += 1;
+          existingDrink.count += 1
         } else {
           personSummary.drinks.push({
             name: order.drinkName,
             size: order.drinkSize,
             price: order.price,
             count: 1,
-          });
+          })
         }
       }
-    });
+    })
 
     // Berechnung des Grand Totals mit Filtern ungültiger Werte
     const grandTotal = orders
-      .map((order) =>
-        typeof order.price === "number" && !isNaN(order.price)
-          ? order.price
-          : 0,
-      )
-      .reduce((sum, price) => sum + price, 0);
+      .map((order) => (typeof order.price === 'number' && !isNaN(order.price) ? order.price : 0))
+      .reduce((sum, price) => sum + price, 0)
 
     Object.values(personSummaries).forEach((summary) => {
-      summary.drinks.sort((a, b) => a.name.localeCompare(b.name));
-    });
+      summary.drinks.sort((a, b) => a.name.localeCompare(b.name))
+    })
 
-    return { personSummaries: Object.values(personSummaries), grandTotal };
-  }, [orders, people]);
+    return { personSummaries: Object.values(personSummaries), grandTotal }
+  }, [orders, people])
 
   return (
     // Apply styles using the styles object
@@ -90,10 +84,10 @@ const Summary: React.FC<SummaryProps> = ({ orders, people }) => {
       {summaryData.personSummaries.map((summary) => (
         <div key={summary.id} className={styles.personSummary}>
           <h3 className={styles.personHeader}>
-            {summary.name}: {summary.totalCount} drink(s) -{" "}
-            {typeof summary.totalCost === "number" && !isNaN(summary.totalCost)
+            {summary.name}: {summary.totalCount} drink(s) -{' '}
+            {typeof summary.totalCost === 'number' && !isNaN(summary.totalCost)
               ? summary.totalCost.toFixed(2)
-              : "0.00"}{" "}
+              : '0.00'}{' '}
             €
           </h3>
           {summary.drinks.length > 0 ? (
@@ -104,11 +98,11 @@ const Summary: React.FC<SummaryProps> = ({ orders, people }) => {
                   {drink.name}
                   {drink.size && ` (${drink.size})`}
                   <span>
-                    {" "}
-                    -{" "}
-                    {typeof drink.price === "number" && !isNaN(drink.price)
+                    {' '}
+                    -{' '}
+                    {typeof drink.price === 'number' && !isNaN(drink.price)
                       ? drink.price.toFixed(2)
-                      : "0.00"}{" "}
+                      : '0.00'}{' '}
                     € each
                   </span>
                 </li>
@@ -125,18 +119,17 @@ const Summary: React.FC<SummaryProps> = ({ orders, people }) => {
           <hr className={styles.divider} />
           <p className={styles.grandTotal}>
             <strong>
-              Grand Total:{" "}
-              {typeof summaryData.grandTotal === "number" &&
-              !isNaN(summaryData.grandTotal)
+              Grand Total:{' '}
+              {typeof summaryData.grandTotal === 'number' && !isNaN(summaryData.grandTotal)
                 ? summaryData.grandTotal.toFixed(2)
-                : "0.00"}{" "}
+                : '0.00'}{' '}
               €
             </strong>
           </p>
         </>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Summary;
+export default Summary

@@ -5,7 +5,7 @@ name: Deploy Vite App to GitHub Pages
 on:
   # Runs on pushes targeting the default branch (usually 'main' or 'master')
   push:
-    branches: ["main"] # Change if your default branch is different
+    branches: ['main'] # Change if your default branch is different
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -19,7 +19,7 @@ permissions:
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: false
 
 jobs:
@@ -34,7 +34,7 @@ jobs:
         with:
           # Specify the Node.js version you are using (check your project's requirement)
           node-version: 20
-          cache: "npm" # or 'yarn' if you use Yarn
+          cache: 'npm' # or 'yarn' if you use Yarn
       - name: Install dependencies
         # Use 'npm ci' for faster, reliable installs in CI
         # Or 'yarn install --frozen-lockfile' if using Yarn
@@ -49,7 +49,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload the 'dist' directory (Vite's default output)
-          path: "./dist"
+          path: './dist'
       # Optional: List files being uploaded for debugging
       # - name: List files in dist
       #   run: ls -R ./dist

@@ -27,7 +27,7 @@
 }
 
 /* Define Dark theme overrides */
-body[data-theme="dark"] {
+body[data-theme='dark'] {
   --color-primary: #ff983e; /* Lighter Orange for dark */
   --color-primary-dark: #ef7f1a; /* Original Orange becomes dark variant */
   --color-secondary: #eeeeee; /* Lighter secondary */

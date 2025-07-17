@@ -1,13 +1,13 @@
 // src/components/PersonManager.tsx
-import React, { useState } from "react";
-import { Person } from "../types";
-import styles from "./PersonManager.module.css"; // Import the CSS Module
+import React, { useState } from 'react'
+import { Person } from '../types'
+import styles from './PersonManager.module.css' // Import the CSS Module
 
 interface PersonManagerProps {
-  people: Person[];
-  selectedPersonId: string | null;
-  onAddPerson: (name: string) => void;
-  onSelectPerson: (id: string) => void;
+  people: Person[]
+  selectedPersonId: string | null
+  onAddPerson: (name: string) => void
+  onSelectPerson: (id: string) => void
 }
 
 const PersonManager: React.FC<PersonManagerProps> = ({
@@ -16,13 +16,13 @@ const PersonManager: React.FC<PersonManagerProps> = ({
   onAddPerson,
   onSelectPerson,
 }) => {
-  const [newName, setNewName] = useState("");
+  const [newName, setNewName] = useState('')
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    onAddPerson(newName);
-    setNewName("");
-  };
+    e.preventDefault()
+    onAddPerson(newName)
+    setNewName('')
+  }
 
   return (
     // Use styles object for class names
@@ -39,15 +39,13 @@ const PersonManager: React.FC<PersonManagerProps> = ({
         <button type="submit">Add</button>
       </form>
       <ul className={styles.personList}>
-        {people.length === 0 && (
-          <li className={styles.personListItem}>No friends added yet.</li>
-        )}
+        {people.length === 0 && <li className={styles.personListItem}>No friends added yet.</li>}
         {people.map((person) => (
           <li
             key={person.id}
             // Combine classes conditionally
             className={`${styles.personListItem} ${
-              person.id === selectedPersonId ? styles.selected : ""
+              person.id === selectedPersonId ? styles.selected : ''
             }`}
             onClick={() => onSelectPerson(person.id)}
           >
@@ -56,7 +54,7 @@ const PersonManager: React.FC<PersonManagerProps> = ({
         ))}
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default PersonManager;
+export default PersonManager
